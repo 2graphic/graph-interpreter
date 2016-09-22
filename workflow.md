@@ -4,17 +4,22 @@ Here is an example of the flow of information through the project.
 ## Graph meta-language
 We begin with the graph meta-lanugage. This describes what kind of graph we're dealing with. This syntax is something I made up on the spot, but it conveys the idea. I like the idea of using algebraic types to allow for multiple kinds of edges and nodes within the graph, but this isn't expressed below. 
 
+An example for why different kinds of nodes would be important is if you wanted to add nodes that represented subgraphs. My convention below is that `X {A B C}` means X has A B and C, and `X [A B C]` means X has A B or C.
+
     Edge {
     	source      : Node
     	destination : Node
     	read   : Symbol
     	write  : Symbol
-        move   : enum {L, R, S}
+        move   : enum [L, R, S]
     }
     
     Node {
     	name : String
-        accept : Boolean
+        [
+            {accept : Boolean}
+            {sub-graph : String}
+        ]
     }
 
 ## Graph
