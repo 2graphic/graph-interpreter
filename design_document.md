@@ -4,7 +4,6 @@
 - **CJ Dimaano**
 - **Dyllon Gagnier**
 - **Daniel James**
-\newpage
 
 # Table of Contents
 1. Executive Summary
@@ -21,7 +20,6 @@
 6. Timeline
 7. Appendix A: UI Sketches
 8. Appendix B: Use Cases
-\newpage
 
 # Executive Summary
 > A description of your software system aimed at non-technical readers. This summary should explain the purpose of your system, who the intended users are, what it will do, and what is especially novel or interesting about it. Pictures, while not required, are encouraged and do not count against the page limit.
@@ -31,7 +29,6 @@
 > When "searching for funding/approval" you have very little time/space to capture the interest of the reader. You need to concisely describe what the project will do, what need it will address, who the users will be, and why a completed project with be of benefit. You also need to convey interest, enthusiasm, and determination. You want the reader coming away from this first page eager to know more and excited about the prospects.
 
 > This section should be one page long.
-\newpage
 
 # Background and Technical Requirements
 *We should probably split this into two sections: Background; Technical Requirements.*
@@ -49,7 +46,6 @@
 > Software/Hardware Requirements - List and describe what hardware and/or software you will need to successfully install and use your software. For those projects with a heavy hardware component: where will the hardware come from, who will maintain/build/program it, how certain are you that the hardware is available and likely to work as expected?
 
 > The background section should be one to three pages long.
-\newpage
 
 # Requrements Analysis (2-3 pages)
 > In this section of the document, you will define three things. 1) What are the major components of the software system (what is the software architecture)? 2) What component is each team member primarily responsible for. 3) What features will the software have.
