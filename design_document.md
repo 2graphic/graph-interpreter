@@ -10,12 +10,12 @@
 2. Background
 3. Technical Requirements
 4. Requirements Analysis
-    a. System Architecture
-    b. Personnel
-    c. System Features
-        i. Rank 1: Bare Essentials
-        ii. Rank 2: Planned Features
-        iii. Rank 3: Bells and Whistles
+	a. System Architecture
+	b. Personnel
+	c. System Features
+		i. Rank 1: Bare Essentials
+		ii. Rank 2: Planned Features
+		iii. Rank 3: Bells and Whistles
 5. Software Engineering Tools and Techniques
 6. Timeline
 7. Appendix A: UI Sketches
@@ -30,8 +30,8 @@
 
 > This section should be one page long.
 
-# Background and Technical Requirements
-*We should probably split this into two sections: Background; Technical Requirements.*
+# Background
+> The background and technical requirements sections should be one to three pages long.
 
 > The purpose of the background section is to show that you have thought about the requirements of the project. The background section should include the following subsections. Feel free to elaborate up to your page limit.
 
@@ -39,13 +39,13 @@
 
 > Similar Ideas - List and describe other programs that do things like what you want to do. Why is your idea different or better?
 
+# Technical Requirements
 > Required Technology - List and describe the software technologies that you will either need to implement or utilize to realize your project goals.
 
 > Assets and Engines - How much will you be building from scratch? What resources/assets will you leverage? Where will they come from?
 
-> Software/Hardware Requirements - List and describe what hardware and/or software you will need to successfully install and use your software. For those projects with a heavy hardware component: where will the hardware come from, who will maintain/build/program it, how certain are you that the hardware is available and likely to work as expected?
-
-> The background section should be one to three pages long.
+## Software Requirements
+Because Sinap will be developed using Electron, it will be bundled as an installation package for each major OS: macOS, Linux, and Windows. Users will only need to download and run the appropriate installer for their OS in order to be able to use Sinap.
 
 # Requrements Analysis (2-3 pages)
 > In this section of the document, you will define three things. 1) What are the major components of the software system (what is the software architecture)? 2) What component is each team member primarily responsible for. 3) What features will the software have.
