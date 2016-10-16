@@ -12,7 +12,7 @@ However, while there are countless tools for manipulating, analyzing, executing,
 
 ### Domain Specific Graphical Languages
 
-A DSGL is almost exactly what was described above except that instead of just having a graph as a visual representation, a DSGL defines both the type of valid graphs in the language (such as undirected vs directed, whether the tree has different types of nodes such as start nodes or final nodes in automata, etc.) as well as having some set of operations that can be performed on the graph, potentially with some external input and producing some output.
+A DSGL is almost exactly what was described above except that instead of just having a graph as a visual representation, a DSGL defines both the type of valid graphs in the language (such as undirected vs directed, whether the graph has different types of nodes such as start nodes or final nodes in automata, etc.) as well as having some set of operations that can be performed on the graph, potentially with some external input and producing some output.
 
 For example, the traditional circuit drawings used in electrical engineering present one example of a DSGL. In this instance, the nodes would be the various electrical components such as resistors, capacitors, and inductors while the edges represent wires connecting the components. Some inputs that might be used in this system could be an input voltage/current in the case that the circuit being represented was part of a larger circuit. Operations that can be performed on circuits might be simply reporting a particular output voltage/current at particular points, evaluating the stability of the system, etc.
 
