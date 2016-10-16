@@ -39,10 +39,12 @@
 
 > Similar Ideas - List and describe other programs that do things like what you want to do. Why is your idea different or better?
 
-# Technical Requirements
-> Required Technology - List and describe the software technologies that you will either need to implement or utilize to realize your project goals.
+## Required Technology
+> We will take advantage of modern web technologies to create a cross-platform application. This will allow us to target all possible users without having three separate projects for UI code. Sinap will be a stand-alone and static application, requiring no backend features. We will leverage [Electron](http://electron.atom.io) or a similar project to bundle our application for all major operating systems. Another advantage of using Electron is the ability to access raw hardware and the filesystem. These features are not easily accessible in traditional web applications in the browser due to privacy concerns.
 
-> Assets and Engines - How much will you be building from scratch? What resources/assets will you leverage? Where will they come from?
+> In order to create maintainable and readable code, we will use [Typescript](https://www.typescriptlang.org) for the majority of our project. Typescript is a super-set of Javascript with optional types and support for ES6 features. We will leverage [Angular 2](https://angular.io) to simplify UI development and help break the project up into modular components.
+
+> Sinap will be free and open source. Therefore, we have been careful to verify that the existing technologies we are using will have appropriate licencing.
 
 ## Software Requirements
 Because Sinap will be developed using Electron, it will be bundled as an installation package for each major OS: macOS, Linux, and Windows. Users will only need to download and run the appropriate installer for their OS in order to be able to use Sinap.
