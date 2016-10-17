@@ -6,22 +6,6 @@ author:
 - Dyllon Gagnier
 - Daniel James
 ---
-# Table of Contents
-
-1. Executive Summary
-2. Background
-3. Technical Requirements
-4. Requirements Analysis
-	a. System Architecture
-	b. Personnel
-	c. System Features
-		i. Rank 1: Bare Essentials
-		ii. Rank 2: Planned Features
-		iii. Rank 3: Bells and Whistles
-5. Software Engineering Tools and Techniques
-6. Timeline
-7. Appendix A: UI Sketches
-8. Appendix B: Use Cases
 
 # Executive Summary
 
