@@ -35,7 +35,18 @@
 
 > The purpose of the background section is to show that you have thought about the requirements of the project. The background section should include the following subsections. Feel free to elaborate up to your page limit.
 
-> Overview of "Idea Space". Why is your project needed? What problems does it solve? Who would use it?
+## Idea Space
+SINAP bears a passing resembalance to such diverse products as [JFLAP](http://www.jflap.org) and [NI LabView](http://www.ni.com/labview/). LabView is a great example of a general purpose graph-based programming environment. It does this job well, and we do not intend to compete with it. 
+
+JFLAP is an environment in which users can create various formal machines, languages, and automata. It allows the user to step through the execution of these systems and convert between various descriptions. 
+
+JFLAP provides an example of why Sinap is necessary. JFLAP is a very cool idea with some solid business logic, but is a nightmare for the end user. Sinap will allow the seperation of the core buisness logic of JFLAP from the tedius task of building a GUI to expose the creation and simulation of these machines. By providing all the boilerplate components for graph editing and input/output control, Sinap will allow for an implementation of JFLAPS core features that is maintainble and has a single purpose. 
+
+In general Sinap will allow the creation of interpreters for graph based languages in a generic way that keeps a strict separation of concerns with regards to execution and user input. It will make the design of graph specific laguages simpler, faster, and more robust. For the end user this means that they will experience a consisitant environment **write more here**. 
+
+> Who would use it?
+
+
 
 > Similar Ideas - List and describe other programs that do things like what you want to do. Why is your idea different or better?
 
