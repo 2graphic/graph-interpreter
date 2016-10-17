@@ -1,4 +1,4 @@
-# Project: Sinap Editor 
+# Project: Sinap Editor
 ## Team: 2graphic  
 - **Sheyne Anderson**
 - **CJ Dimaano**
@@ -22,13 +22,24 @@
 8. Appendix B: Use Cases
 
 # Executive Summary
-> A description of your software system aimed at non-technical readers. This summary should explain the purpose of your system, who the intended users are, what it will do, and what is especially novel or interesting about it. Pictures, while not required, are encouraged and do not count against the page limit.
 
-> The purpose of this introduction to your idea is to clearly and succinctly describe the final goal of the project. It should list key features and components and explain why the project is interesting and worthwhile.
+## Problem Definition
 
-> When "searching for funding/approval" you have very little time/space to capture the interest of the reader. You need to concisely describe what the project will do, what need it will address, who the users will be, and why a completed project with be of benefit. You also need to convey interest, enthusiasm, and determination. You want the reader coming away from this first page eager to know more and excited about the prospects.
+Many concepts within computer science and without can be easily modeled as some number of objects (nodes) that are interconnected to one another through relations (edges). By modeling problems in this fashion using mathematical graphs, it becomes much easier to analyze the problem at hand due to the expressiveness of graphs from an analytical perspective as well as being able to have a graphical (in the pictorial sense) representation. Unlike text, graphs need not represent flow through a system linearly and can instead model more complex flows much more easily.
 
-> This section should be one page long.
+However, while there are countless tools for manipulating, analyzing, executing, and displaying textual data, there are much fewer tools for dealing with graphs despite their usefulness. Therefore, 2graphic will work to create a set of interrelated tools that will work together to provide an integrated development environment (IDE) for working with domain specific graphical languages (DSGLs).
+
+### Domain Specific Graphical Languages
+
+A DSGL is almost exactly what was described above except that instead of just having a graph as a visual representation, a DSGL defines both the type of valid graphs in the language (such as undirected vs directed, whether the graph has different types of nodes such as start nodes or final nodes in automata, etc.) as well as having some set of operations that can be performed on the graph, potentially with some external input and producing some output.
+
+For example, the traditional circuit drawings used in electrical engineering present one example of a DSGL. In this instance, the nodes would be the various electrical components such as resistors, capacitors, and inductors while the edges represent wires connecting the components. Some inputs that might be used in this system could be an input voltage/current in the case that the circuit being represented was part of a larger circuit. Operations that can be performed on circuits might be simply reporting a particular output voltage/current at particular points, evaluating the stability of the system, etc.
+
+## SINAP Architecture
+
+While SINAP does seek to be a general purpose IDE for manipulating and working with DSGLs, it is specifically focused upon education, and particularly on teaching various models of computing such as turing machines, push down automata, and state machines. Therefore, the formal languages and automata plugin (FLAP) will be a key series of components in the SINAP project. Additionally, 2graphic is planning on implementing a neural networks plugin that will serve both as an independently useful component as well las demonstrating the generality of SINAP.
+
+It is key to note that both plugins are indeed plugins to SINAP and that the core program merely provides functionality that plugins may utilize to design, manipulate, and analyze various kinds of graphs as defined by the plugins. The two primary components that will be controlled and supplied through plugins will be an interpreter for carrying out operations on the graphs as well as a meta language which will be used by the editor component of SINAP to render and manipulate the graph. The interpreter is invoked by the editor component which may be fed inputs as requested by the interpreter and will produce some output.
 
 # Background
 > The background and technical requirements sections should be one to three pages long.
@@ -36,13 +47,13 @@
 > The purpose of the background section is to show that you have thought about the requirements of the project. The background section should include the following subsections. Feel free to elaborate up to your page limit.
 
 ## Idea Space
-SINAP bears a passing resembalance to such diverse products as [JFLAP](http://www.jflap.org) and [NI LabView](http://www.ni.com/labview/). LabView is a great example of a general purpose graph-based programming environment. It does this job well, and we do not intend to compete with it. 
+SINAP bears a passing resembalance to such diverse products as [JFLAP](http://www.jflap.org) and [NI LabView](http://www.ni.com/labview/). LabView is a great example of a general purpose graph-based programming environment. It does this job well, and we do not intend to compete with it.
 
-JFLAP is an environment in which users can create various formal machines, languages, and automata. It allows the user to step through the execution of these systems and convert between various descriptions. 
+JFLAP is an environment in which users can create various formal machines, languages, and automata. It allows the user to step through the execution of these systems and convert between various descriptions.
 
-JFLAP provides an example of why Sinap is necessary. JFLAP is a very cool idea with some solid business logic, but is a nightmare for the end user. Sinap will allow the seperation of the core buisness logic of JFLAP from the tedius task of building a GUI to expose the creation and simulation of these machines. By providing all the boilerplate components for graph editing and input/output control, Sinap will allow for an implementation of JFLAPS core features that is maintainble and has a single purpose. 
+JFLAP provides an example of why Sinap is necessary. JFLAP is a very cool idea with some solid business logic, but is a nightmare for the end user. Sinap will allow the seperation of the core buisness logic of JFLAP from the tedius task of building a GUI to expose the creation and simulation of these machines. By providing all the boilerplate components for graph editing and input/output control, Sinap will allow for an implementation of JFLAPS core features that is maintainble and has a single purpose.
 
-In general Sinap will allow the creation of interpreters for graph based languages in a generic way that keeps a strict separation of concerns with regards to execution and user input. It will make the design of graph specific laguages simpler, faster, and more robust. For the end user this means that they will experience a consisitant environment **write more here**. 
+In general Sinap will allow the creation of interpreters for graph based languages in a generic way that keeps a strict separation of concerns with regards to execution and user input. It will make the design of graph specific laguages simpler, faster, and more robust. For the end user this means that they will experience a consisitant environment **write more here**.
 
 > Who would use it?
 
