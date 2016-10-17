@@ -1,4 +1,4 @@
-# Project: Sinap (Sinap is not a plot)  
+# Project: Sinap Editor 
 ## Team: 2graphic  
 - **Sheyne Anderson**
 - **CJ Dimaano**
