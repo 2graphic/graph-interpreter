@@ -1,3 +1,6 @@
+.PHONY: all
+all: workflow.pdf workflow.html design_document.pdf
+
 open: workflow.pdf
 	open workflow.pdf
 
@@ -10,5 +13,8 @@ workflow.html: workflow.md graph1.pdf
 graph1.pdf: graph1.dot
 	dot graph1.dot -Gdpi=50 -Tpdf -o graph1.pdf
 
+design_document.pdf: design_document.md
+	pandoc design_document.md -o design_document.pdf
+
 clean:
-	rm graph1.pdf workflow.pdf workflow.html
+	rm -f *.pdf *.html
