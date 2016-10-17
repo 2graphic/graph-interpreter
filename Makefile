@@ -1,6 +1,7 @@
 .PHONY: all
 all: workflow.pdf workflow.html design_document.pdf
 
+.PHONY: open
 open: workflow.pdf
 	open workflow.pdf
 
