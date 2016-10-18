@@ -26,7 +26,7 @@ While Sinap does seek to be a general purpose IDE for manipulating and working w
 
 It is key to note that both plugins are indeed plugins to Sinap and that the core program merely provides functionality that plugins may utilize to design, manipulate, and analyze various kinds of graphs as defined by the plugins. The two primary components that will be controlled and supplied through plugins will be an interpreter for carrying out operations on the graphs as well as a meta language which will be used by the editor component of Sinap to render and manipulate the graph. The interpreter is invoked by the editor component which may be fed inputs as requested by the interpreter and will produce some output. See figure 2 for the flow of the architecture.
 
-![Sinap architecture](pictures/architecture.pdf)
+![Sinap architecture](pictures/architecture.pdf){ width=70% }
 
 # Background
 ## Domain Specific Graphic-Based Languages
