@@ -1,3 +1,4 @@
 *.pdf
 *.html
 !pictures/*.pdf
+.DS_Store
