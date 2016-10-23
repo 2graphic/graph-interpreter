@@ -130,10 +130,11 @@ Either
 
 1. Click on the node
 2. a properties view will appear will each of the variables associated with the nodes type listed as inputs
-3. based on the type of the variable user will have the option to enter text, numers, dates, images, or lists of any of the former
-4. as changes are made, the node's appearence will update
+3. based on the type of the variable user will have the option to enter text, numbers, dates, images, color, etc. or lists of any of the former
+4. as changes are made, the node's appearance will update
 
 ### Setting the properties of an edge
+
 1. Click on an edge
 2. 2-4 are the same as **Setting the properties of a node**
 

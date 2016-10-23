@@ -69,4 +69,18 @@ title: Use Cases
 
 # Future Ideas
 
-- Moving feeding images to graph into running program.
+- New user using Sinap.
+- Allow plugins to specify look of the graph.
+    1. Autoformat file.
+
+## Generic Stuff
+
+- Try a bunch of different ideas for inputs.
+- Allow for color of node to be specified.
+- Somehow specify look of nodes
+    1. Default color
+    2. New type of plugin component
+    3. Also debugging support.
+    4. Image in circle.
+        a. Could just put it in there.
+- Give interpreter access to IDE based attributes?
