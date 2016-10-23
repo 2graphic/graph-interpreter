@@ -54,7 +54,6 @@ Sinap will be free and open source. Therefore, we have been careful to verify th
 
 ## Software Requirements
 Because Sinap will be developed using Electron, it will be bundled as an installation package for each major OS: macOS, Linux, and Windows. Users will only need to download and run the appropriate installer for their OS in order to be able to use Sinap.
-<<<<<<< HEAD
 
 # Requrements Analysis (2-3 pages)
 > In this section of the document, you will define three things. 1) What are the major components of the software system (what is the software architecture)? 2) What component is each team member primarily responsible for. 3) What features will the software have.
