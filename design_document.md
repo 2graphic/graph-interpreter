@@ -108,6 +108,42 @@ A models of computation student will select a type of automata (such as a pushdo
 3. User drags and drops components to create a computation graph.
 4. Editor populates with the components as determined by the user.
 
+## Editing A Graph
+
+After creating a graph, a sinap programmer will want to be able to adjust the properties of a graph. 
+
+### Adding a Node
+
+Either
+
+ - drag-drop
+    1. Drag a node from the nodes palette to the canvas
+ - shortcut
+    1. Press a shortcut key (such as "n")
+    2. Click on the canvas to add the node at current mouse location
+
+### Adding an Edge
+
+1. Secondary drag from source node to destination node
+
+### Setting the properties of a node
+
+1. Click on the node
+2. a properties view will appear will each of the variables associated with the nodes type listed as inputs
+3. based on the type of the variable user will have the option to enter text, numers, dates, images, or lists of any of the former
+4. as changes are made, the node's appearence will update
+
+### Setting the properties of an edge
+1. Click on an edge
+2. 2-4 are the same as **Setting the properties of a node**
+
+### Checkpointing
+In all cases above, changes should be saved as the user edits. Should the user desire to save the current state to revert to, they can:
+
+1. click on the file menu
+2. click checkpoint
+3. optionally give the checkpoint a name
+
 ## Running a Graph Program
 
 A Sinap programmer will execute a program upon a computation graph that will accept some text input and output text input (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)).
@@ -125,6 +161,21 @@ A Sinap programmer will execute a program upon a computation graph that will acc
 8. Program executes given the context of the input and graph.
 9. The result of the computation is displayed to the user.
 
+## Feeding Images to a Graph
+
+While editing certain kinds of graphs, a user will want to feed images to the graph. For this use case, a user already has a graph open and is in editing mode. 
+
+### Steps
+
+1. User changes focus to the I/O view. 
+2. User selects the interpreter they would like to use for the graph (if multiple options are available)
+3. User is presented with the expected input for the graph
+    a. This may be images  *TODO, HOW DO WE EXPRESS THIS WELL?*
+    b. if so, the user will input either an image or a list of images.
+        - this depends on the interpreter
+5. User presses the run button
+6. Output is displayed *TODO, HOW DO WE EXPRESS THIS WELL?*
+
 ## Debugging a Program
 
 A Sinap programmer will select some number of nodes (which represent program state) as debug points, begin running a program, and then the program will halt once that node is reached and the entire current program state will be displayed to the user.
@@ -138,3 +189,5 @@ A Sinap programmer will select some number of nodes (which represent program sta
 5. The program halts once the selected state is reached.
 6. The program emits its state to the Sinap editor.
 7. The entirety of the emitted state (such as a the stack for a pushdown automata) is displayed by the editor.
+
+
