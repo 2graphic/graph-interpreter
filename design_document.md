@@ -97,22 +97,22 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 
 # Appendix B: Use Cases
 
-# Writing a Graph
+## Writing a Graph
 
 A models of computation student will select a type of automata (such as a pushdown automata) and then will design a graph corresponding to this type of computation, the input functionality adapting depending on the type of graph selected.
 
-## Steps
+### Steps
 
 1. User selects to create a new graph type (such as a pushdown automata).
 2. The editor populates with various graph type specific components (such as initial/final states).
 3. User drags and drops components to create a computation graph.
 4. Editor populates with the components as determined by the user.
 
-# Running a Graph Program
+## Running a Graph Program
 
 A Sinap programmer will execute a program upon a computation graph that will accept some text input and output text input (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)).
 
-## Steps
+### Steps
 
 1. User opens/creates a graph in Sinap as covered in Use Case 1.
 2. User selects to see which programs are available for the particular type of graph.
@@ -125,11 +125,11 @@ A Sinap programmer will execute a program upon a computation graph that will acc
 8. Program executes given the context of the input and graph.
 9. The result of the computation is displayed to the user.
 
-# Debugging a Program
+## Debugging a Program
 
 A Sinap programmer will select some number of nodes (which represent program state) as debug points, begin running a program, and then the program will halt once that node is reached and the entire current program state will be displayed to the user.
 
-## Steps
+### Steps
 
 1. User selects the debug tool.
 2. User clicks on a state.
