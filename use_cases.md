@@ -66,3 +66,7 @@ title: Use Cases
     1. "Runs" the graph
     2. Only have one
     3. Defines what inputs/outputs it does as well as the types of operations
+
+# Future Ideas
+
+- Moving feeding images to graph into running program.

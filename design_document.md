@@ -110,7 +110,7 @@ A models of computation student will select a type of automata (such as a pushdo
 
 ## Editing A Graph
 
-After creating a graph, a sinap programmer will want to be able to adjust the properties of a graph. 
+After creating a graph, a sinap programmer will want to be able to adjust the properties of a graph.
 
 ### Adding a Node
 
@@ -137,37 +137,30 @@ Either
 1. Click on an edge
 2. 2-4 are the same as **Setting the properties of a node**
 
-### Checkpointing
-In all cases above, changes should be saved as the user edits. Should the user desire to save the current state to revert to, they can:
+## Running an Interpreter
 
-1. click on the file menu
-2. click checkpoint
-3. optionally give the checkpoint a name
-
-## Running a Graph Program
-
-A Sinap programmer will execute a program upon a computation graph that will accept some text input and output text input (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)).
+A Sinap programmer will run an interpreter upon a computation graph that will accept some input and output some result (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)).
 
 ### Steps
 
 1. User opens/creates a graph in Sinap as covered in Use Case 1.
-2. User selects to see which programs are available for the particular type of graph.
-3. Sinap presents known programs associated with that particular type of graph.
+2. User selects to see which interpreters are available for the particular type of graph.
+3. Sinap presents known interpreters associated with that particular type of graph.
 4. User selects one of these to run on the current graph.
-5. Sinap begins execution of the program.
-7. Program requests Sinap to get input from user.
-6. User is asked for input by Sinap to feed the program.
-7. User inputs desired text as input to program.
+5. Sinap begins execution of the interpreter.
+7. Interpreter requests Sinap to get input from user.
+6. User is asked for input by Sinap to feed the interpreter.
+7. User inputs desired input as interpreter to program.
 8. Program executes given the context of the input and graph.
 9. The result of the computation is displayed to the user.
 
 ## Feeding Images to a Graph
 
-While editing certain kinds of graphs, a user will want to feed images to the graph. For this use case, a user already has a graph open and is in editing mode. 
+While editing certain kinds of graphs, a user will want to feed images to the graph. For this use case, a user already has a graph open and is in editing mode.
 
 ### Steps
 
-1. User changes focus to the I/O view. 
+1. User changes focus to the I/O view.
 2. User selects the interpreter they would like to use for the graph (if multiple options are available)
 3. User is presented with the expected input for the graph
     a. This may be images  *TODO, HOW DO WE EXPRESS THIS WELL?*
@@ -189,5 +182,3 @@ A Sinap programmer will select some number of nodes (which represent program sta
 5. The program halts once the selected state is reached.
 6. The program emits its state to the Sinap editor.
 7. The entirety of the emitted state (such as a the stack for a pushdown automata) is displayed by the editor.
-
-
