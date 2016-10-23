@@ -7,13 +7,16 @@ author:
 - Daniel James
 ---
 
+
+\newpage
+
 # Executive Summary
 
 ## Problem Definition
 
 Many concepts within computer science and without can be easily modeled as some number of objects (nodes) which are interconnected to one another through relations (edges). See figure 1 for an example of a graph. By modeling problems in this fashion using mathematical graphs, it becomes much easier to analyze the problem at hand due to the expressiveness of graphs from an analytical perspective as well as being able to have a pictorial representation. Unlike text, graphs need not represent flow through a system linearly and can instead model more complex flows much more easily that may have many paths.
 
-![Example of a graph.](https://github.com/2graphic/sinap-design-docs/raw/master/pictures/example_graph.png)
+![Example of a graph.](pictures/example_graph.pdf){ width=2.5in }
 
 However, while there are countless tools for manipulating, analyzing, executing, and displaying textual data, there are much fewer tools for dealing with graphs despite their usefulness. Therefore, 2graphic will work to create a set of interrelated tools that will work together to provide an integrated development environment (IDE) for working with these graphs.
 
@@ -23,7 +26,7 @@ While Sinap does seek to be a general purpose IDE for manipulating and working w
 
 It is key to note that both plugins are indeed plugins to Sinap and that the core program merely provides functionality that plugins may utilize to design, manipulate, and analyze various kinds of graphs as defined by the plugins. The two primary components that will be controlled and supplied through plugins will be an interpreter for carrying out operations on the graphs as well as a meta language which will be used by the editor component of Sinap to render and manipulate the graph. The interpreter is invoked by the editor component which may be fed inputs as requested by the interpreter and will produce some output. See figure 2 for the flow of the architecture.
 
-![Sinap architecture](https://github.com/2graphic/sinap-design-docs/raw/master/pictures/architecture.jpg)
+![Sinap architecture](pictures/architecture.pdf){ width=70% }
 
 # Background
 ## Domain Specific Graphic-Based Languages
@@ -51,6 +54,7 @@ Sinap will be free and open source. Therefore, we have been careful to verify th
 
 ## Software Requirements
 Because Sinap will be developed using Electron, it will be bundled as an installation package for each major OS: macOS, Linux, and Windows. Users will only need to download and run the appropriate installer for their OS in order to be able to use Sinap.
+<<<<<<< HEAD
 
 # Requrements Analysis (2-3 pages)
 > In this section of the document, you will define three things. 1) What are the major components of the software system (what is the software architecture)? 2) What component is each team member primarily responsible for. 3) What features will the software have.
