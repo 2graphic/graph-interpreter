@@ -93,4 +93,45 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 > A set of sketches showing the final projected look of the project, annotated with how the user will interact with the system.
 
 # Appendix B: Use Cases
-> A set of use cases from both the user point of view and if necessary, the system point of view, detailing how the software will be used. These Use Cases should refer to the UI sketches where appropriate.
+
+# Writing a Graph
+
+A models of computation student will select a type of automata (such as a pushdown automata) and then will design a graph corresponding to this type of computation, the input functionality adapting depending on the type of graph selected.
+
+## Steps
+
+1. User selects to create a new graph type (such as a pushdown automata).
+2. The editor populates with various graph type specific components (such as initial/final states).
+3. User drags and drops components to create a computation graph.
+4. Editor populates with the components as determined by the user.
+
+# Running a Graph Program
+
+A Sinap programmer will execute a program upon a computation graph that will accept some text input and output text input (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)).
+
+## Steps
+
+1. User opens/creates a graph in Sinap as covered in Use Case 1.
+2. User selects to see which programs are available for the particular type of graph.
+3. Sinap presents known programs associated with that particular type of graph.
+4. User selects one of these to run on the current graph.
+5. Sinap begins execution of the program.
+7. Program requests Sinap to get input from user.
+6. User is asked for input by Sinap to feed the program.
+7. User inputs desired text as input to program.
+8. Program executes given the context of the input and graph.
+9. The result of the computation is displayed to the user.
+
+# Debugging a Program
+
+A Sinap programmer will select some number of nodes (which represent program state) as debug points, begin running a program, and then the program will halt once that node is reached and the entire current program state will be displayed to the user.
+
+## Steps
+
+1. User selects the debug tool.
+2. User clicks on a state.
+3. That state becomes emphasized in the editor.
+4. User selects and then runs a program in debug mode.
+5. The program halts once the selected state is reached.
+6. The program emits its state to the Sinap editor.
+7. The entirety of the emitted state (such as a the stack for a pushdown automata) is displayed by the editor.
