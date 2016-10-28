@@ -108,35 +108,22 @@ A models of computation student will select a type of automata (such as a pushdo
 3. User drags and drops components to create a computation graph.
 4. Editor populates with the components as determined by the user.
 
-## Editing A Graph
+## Adjusting Properties of Graph Elements
 
-After creating a graph, a sinap programmer will want to be able to adjust the properties of a graph.
+Graphs may have special properties associated with each node as specified by plugins. Users will be able to set and adjust these properties.
 
-### Adding a Node
+### Steps
 
-Either
-
- - drag-drop
-    1. Drag a node from the nodes palette to the canvas
- - shortcut
-    1. Press a shortcut key (such as "n")
-    2. Click on the canvas to add the node at current mouse location
-
-### Adding an Edge
-
-1. Secondary drag from source node to destination node
-
-### Setting the properties of a node
-
-1. Click on the node
-2. a properties view will appear will each of the variables associated with the nodes type listed as inputs
-3. based on the type of the variable user will have the option to enter text, numbers, dates, images, color, etc. or lists of any of the former
-4. as changes are made, the node's appearance will update
+1. User selects either a node or edge.
+2. Sinap will display the current properties of the selected component.
+3. User selects a property to adjust.
+4. Sinap will present a specialized interface depending on the type of the property (i.e. things like date pickers and file dialogs).
+5. User enters in desired input value.
+6. Sinap validates type of input.
+7. Plugin validates input for correctness and consistency.
+8. Property is updated in graph for particular component.
 
 ### Setting the properties of an edge
-
-1. Click on an edge
-2. 2-4 are the same as **Setting the properties of a node**
 
 ## Running an Interpreter
 
@@ -157,7 +144,7 @@ A Sinap programmer will run an interpreter upon a computation graph that will ac
 
 ## Feeding Images to a Graph
 
-While editing certain kinds of graphs, a user will want to feed images to the graph. For this use case, a user already has a graph open and is in editing mode.
+While editing certain kinds of graphs, a user will feed images to the graph. For this use case, a user already has a graph open and is in editing mode.
 
 ### Steps
 
@@ -183,3 +170,90 @@ A Sinap programmer will select some number of nodes (which represent program sta
 5. The program halts once the selected state is reached.
 6. The program emits its state to the Sinap editor.
 7. The entirety of the emitted state (such as a the stack for a pushdown automata) is displayed by the editor.
+
+## Writing Graphs on a Projector
+
+Teachers and professors will display a graph on a large display such as a project and will edit this graph in front of an audience. All critical elements of the graph should be visible to the audience.
+
+### Steps
+
+1. Professor launches Sinap initially in the regular use mode and selects to create a new graph.
+2. Professor selects to enter presentation mode.
+3. Sinap reconfigures itself, hiding most non-critical menus and bars to maximize screen real estate.
+4. Professor lectures while editing graph.
+
+## Export Graphs to Images
+
+A user will create a graph and export it to an image format suitable for reports and presentations.
+
+### Steps
+
+1. User creates a new graph or opens an existing graph.
+2. User selects to export graph as an image in Sinap.
+3. User selects the options associated with exporting such as type of image and resolution.
+4. User selects location to save the image.
+5. Sinap saves the image according to the options selected in the specified file location.
+
+## Customized Component Look and Feel
+
+Plugin designers will write code to specify the look and feel of both nodes and edges through a simple declarative API.
+
+### Steps
+
+1. Designer reads Sinap plugin documentation.
+2. Designer creates custom images for nodes.
+3. Designer creates a file mapping these images to node types.
+4. Sinap reads the file mapping and loads the custom component pictures for the plugin.
+
+## Beautify Graph
+
+Users of Sinap will select to beautify a graph. Sinap will then make a best effort to modify the layout of the graph to be as easy to read and aesthetically pleasing as possible.
+
+### Steps
+
+1. User selects to beautify graph on the current graph being edited in Sinap.
+2. Sinap determines which priorities and rules (such as preferring horizontal and vertical edges) by reading a simple declarative file provided by the plugin.
+    + If no file is provided, Sinap will use a default set of rules suitable for generic graphs.
+3. Based on these rules, Sinap will try to find a layout of the graph that matches these rules with as minimal modifications to the existing graph as possible.
+4. Sinap updates the graph layout visually as well as in the graph model.
+    + The beautification will **not** be saved until the user specifies to do so.
+
+## Composing Graphs
+
+A user of Sinap will be able to design small sub graphs with defined inputs and outputs that can be composed together to create more complex graphs.
+
+### Steps
+
+1. User creates and saves a subgraph in a particular file.
+2. User creates a new graph saved to a separate file.
+3. User selects the file created in step 1 and selects to import it into the current graph.
+4. Sinap imports the content of the previous into the current graph.
+5. A single black box component is displayed for the imported component.
+5. User connects input edges and output edges going to and from the subgraph.
+6. User can now run interpreters on the graph just as they could for any other graph.
+
+## Bootstrapping Sinap
+
+A new user (likely a student) of Sinap will download, install, and configure Sinap.
+
+### Steps
+
+1. User visits Sinap's home page.
+2. User downloads Sinap.
+    + This should take less than 10 minutes assuming a reasonable internet connection.
+3. User executes standard installation steps for their particular operating system.
+4. User opens Sinap for the first time.
+5. User will configure Sinap to have their desired plugins.
+6. Sinap downloads and installs these plugins.
+
+## Installing a Plugin
+
+A user of Sinap will select and install a Sinap plugin from a git repository.
+
+### Steps
+
+1. Open Sinap
+2. Select to install a plugin.
+3. User inputs a path (which may be local or remote) to a git repository.
+4. Sinap clones git repository if remote.
+5. Sinap runs installation procedures for the plugin and then deletes the cloned repository (if the repository was not originally local).
