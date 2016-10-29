@@ -169,8 +169,6 @@ Graphs may have special properties associated with each node as specified by plu
 7. Plugin validates input for correctness and consistency.
 8. Property is updated in graph for particular component.
 
-### Setting the properties of an edge
-
 ## Running an Interpreter
 
 A Sinap programmer will run an interpreter upon a computation graph that will accept some input and output some result (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)). See the Input Panel sketch.
@@ -197,11 +195,10 @@ While editing certain kinds of graphs, a user will feed images to the graph. For
 1. User changes focus to the I/O view.
 2. User selects the interpreter they would like to use for the graph (if multiple options are available)
 3. User is presented with the expected input for the graph
-    a. This may be images  *TODO, HOW DO WE EXPRESS THIS WELL?*
-    b. if so, the user will input either an image or a list of images.
-        - this depends on the interpreter
+    * This may be images.
+    * If so, the user will input either an image or a list of images depending on the plugin.
 5. User presses the run button
-6. Output is displayed *TODO, HOW DO WE EXPRESS THIS WELL?*
+6. Output is displayed to the user.
 
 ## Debugging a Program
 
