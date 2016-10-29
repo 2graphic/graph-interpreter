@@ -93,7 +93,41 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 > Most of you will feel as though you are guessing -- and that's ok! You will not be held to this exact schedule. But it is extremely useful to do your best to create a realistic schedule now to get experience in planning long-term projects. Equally important, creating this schedule will force you to think about (1) the order in which things need to be done, (2) how long you expect various phases to take, and (3) what you should expect to have accomplished at various points in the semester. This will serve as a guide to help you evaluate your progress during the semester and quickly recognize if things are going much slower or faster than you anticipated.
 
 # Appendix A: UI Sketches
-> A set of sketches showing the final projected look of the project, annotated with how the user will interact with the system.
+## Blank Canvas
+![All files are closed.](ui_sketches/blank_canvas.png){ width=100% }
+
+## Menu
+![Menu provides list of plugins installed to create new document from.](ui_sketches/main-menu_new.png){ width=100% }
+
+## New Dialog
+![Allows user to create and name a new document. Provides a description of the plugin the user is using.](ui_sketches/new_file.png){ width=100% }
+
+## Files Panel
+![Displays list of files in project folder.](ui_sketches/Files Panel.png){ width=100% }
+
+## Properties Panel
+![Displays the editable properties of the selected node/edge in the editor.](ui_sketches/Properties Panel.png){ width=100% }
+
+## Tools Panel
+![Displays available node types and edge types a user can select.](ui_sketches/Tools Panel.png){ width=100% }
+
+## Input Panel
+![Allows a user to specify input and receive output. (Think: REPL)](ui_sketches/Input Panel.png){ width=100% }
+
+## Test Panel
+![Allows a user to specify a set of tests to run. (Think: Unit Tests)](ui_sketches/Test Panel.png){ width=100% }
+
+## Debug Panel
+![Allows a user to step through state transitions. (Think: Debugger)](ui_sketches/filename_debug.png){ width=100% }
+
+## Full Screen
+![Shows a full screen mode, optimized for displaying the graph.](ui_sketches/fullscreen.png){ width=100% }
+
+## Zoomed In
+![Zoom in and pan a graph to focus on certain areas for complex graphs.](ui_sketches/Zoomed In.png){ width=100% }
+
+## Machine Learning Plugin
+![Shows and alternative view of the editor and input panel while using the Machine Learning plugin.](ui_sketches/other_active.png){ width=png% }
 
 # Appendix B: Use Cases
 
