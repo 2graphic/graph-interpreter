@@ -94,57 +94,69 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 
 # Appendix A: UI Sketches
 ## Blank Canvas
-![All files are closed.](ui_sketches/blank_canvas.png){ width=100% }
+![All files are closed.](ui_sketches/blank_canvas.png){ width=100% } \
+
 
 ## Menu
-![Menu provides list of plugins installed to create new document from.](ui_sketches/main-menu_new.png){ width=100% }
+![Menu provides list of plugins installed to create new document from.](ui_sketches/main-menu_new.png){ width=100% } \
+
 
 ## New Dialog
-![Allows user to create and name a new document. Provides a description of the plugin the user is using.](ui_sketches/new_file.png){ width=100% }
+![Allows user to create and name a new document. Provides a description of the plugin the user is using.](ui_sketches/new_file.png){ width=100% } \
+
 
 ## Files Panel
-![Displays list of files in project folder.](ui_sketches/Files Panel.png){ width=100% }
+![Displays list of files in project folder.](ui_sketches/Files Panel.png){ width=100% } \
+
 
 ## Properties Panel
-![Displays the editable properties of the selected node/edge in the editor.](ui_sketches/Properties Panel.png){ width=100% }
+![Displays the editable properties of the selected node/edge in the editor.](ui_sketches/Properties Panel.png){ width=100% } \
+
 
 ## Tools Panel
-![Displays available node types and edge types a user can select.](ui_sketches/Tools Panel.png){ width=100% }
+![Displays available node types and edge types a user can select.](ui_sketches/Tools Panel.png){ width=100% } \
+
 
 ## Input Panel
-![Allows a user to specify input and receive output. (Think: REPL)](ui_sketches/Input Panel.png){ width=100% }
+![Allows a user to specify input and receive output. (Think: REPL)](ui_sketches/Input Panel.png){ width=100% } \
+
 
 ## Test Panel
-![Allows a user to specify a set of tests to run. (Think: Unit Tests)](ui_sketches/Test Panel.png){ width=100% }
+![Allows a user to specify a set of tests to run. (Think: Unit Tests)](ui_sketches/Test Panel.png){ width=100% } \
+
 
 ## Debug Panel
-![Allows a user to step through state transitions. (Think: Debugger)](ui_sketches/filename_debug.png){ width=100% }
+![Allows a user to step through state transitions. (Think: Debugger)](ui_sketches/filename_debug.png){ width=100% } \
+
 
 ## Full Screen
-![Shows a full screen mode, optimized for displaying the graph.](ui_sketches/fullscreen.png){ width=100% }
+![Shows a full screen mode, optimized for displaying the graph.](ui_sketches/fullscreen.png){ width=100% } \
+
 
 ## Zoomed In
-![Zoom in and pan a graph to focus on certain areas for complex graphs.](ui_sketches/Zoomed In.png){ width=100% }
+![Zoom in and pan a graph to focus on certain areas for complex graphs.](ui_sketches/Zoomed In.png){ width=100% } \
+
 
 ## Machine Learning Plugin
-![Shows and alternative view of the editor and input panel while using the Machine Learning plugin.](ui_sketches/other_active.png){ width=png% }
+![Shows and alternative view of the editor and input panel while using the Machine Learning plugin.](ui_sketches/other_active.png){ width=png% } \
+
 
 # Appendix B: Use Cases
 
 ## Writing a Graph
 
-A models of computation student will select a type of automata (such as a pushdown automata) and then will design a graph corresponding to this type of computation, the input functionality adapting depending on the type of graph selected.
+A user of Sinap creates and edits a graph.
 
 ### Steps
 
-1. User selects to create a new graph type (such as a pushdown automata).
-2. The editor populates with various graph type specific components (such as initial/final states).
+1. User selects to create a new graph type (such as a pushdown automata). See New Dialog sketch and the Menu sketch.
+2. The editor populates with various graph type specific components (such as initial/final states). See the Tools Panel sketch.
 3. User drags and drops components to create a computation graph.
 4. Editor populates with the components as determined by the user.
 
 ## Adjusting Properties of Graph Elements
 
-Graphs may have special properties associated with each node as specified by plugins. Users will be able to set and adjust these properties.
+Graphs may have special properties associated with each node as specified by plugins. Users will be able to set and adjust these properties. See the Properties Panel sketch.
 
 ### Steps
 
@@ -161,7 +173,7 @@ Graphs may have special properties associated with each node as specified by plu
 
 ## Running an Interpreter
 
-A Sinap programmer will run an interpreter upon a computation graph that will accept some input and output some result (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)).
+A Sinap programmer will run an interpreter upon a computation graph that will accept some input and output some result (perhaps whether the input string is accepted by the language defined by the graph in the case of the formal languages and automata plugin (FLAP)). See the Input Panel sketch.
 
 ### Steps
 
@@ -203,11 +215,11 @@ A Sinap programmer will select some number of nodes (which represent program sta
 4. User selects and then runs a program in debug mode.
 5. The program halts once the selected state is reached.
 6. The program emits its state to the Sinap editor.
-7. The entirety of the emitted state (such as a the stack for a pushdown automata) is displayed by the editor.
+7. The entirety of the emitted state (such as a the stack for a pushdown automata) is displayed by the editor. See the Debug Panel sketch.
 
 ## Writing Graphs on a Projector
 
-Teachers and professors will display a graph on a large display such as a project and will edit this graph in front of an audience. All critical elements of the graph should be visible to the audience.
+Professors will display a graph on a large display such as a project and will edit this graph in front of an audience. All critical elements of the graph should be visible to the audience. See the Full Screen sketch.
 
 ### Steps
 
@@ -223,7 +235,7 @@ A user will create a graph and export it to an image format suitable for reports
 ### Steps
 
 1. User creates a new graph or opens an existing graph.
-2. User selects to export graph as an image in Sinap.
+2. User selects to export graph as an image in Sinap. See the Menu sketch.
 3. User selects the options associated with exporting such as type of image and resolution.
 4. User selects location to save the image.
 5. Sinap saves the image according to the options selected in the specified file location.
@@ -260,7 +272,7 @@ A user of Sinap will be able to design small sub graphs with defined inputs and 
 
 1. User creates and saves a subgraph in a particular file.
 2. User creates a new graph saved to a separate file.
-3. User selects the file created in step 1 and selects to import it into the current graph.
+3. User selects the file created in step 1 and selects to import it into the current graph. See the Files Panel sketch.
 4. Sinap imports the content of the previous into the current graph.
 5. A single black box component is displayed for the imported component.
 5. User connects input edges and output edges going to and from the subgraph.
@@ -291,3 +303,51 @@ A user of Sinap will select and install a Sinap plugin from a git repository.
 3. User inputs a path (which may be local or remote) to a git repository.
 4. Sinap clones git repository if remote.
 5. Sinap runs installation procedures for the plugin and then deletes the cloned repository (if the repository was not originally local).
+
+## Machine Learning
+
+A student or professional of machine learning will create and run a neural network using Sinap. See the Machine Learning Plugin sketch.
+
+### Steps
+
+1. User creates a new neural network graph file. See the New Dialog sketch.
+2. User adds in nodes/edges as well as setting various properties of these elements to create a machine learning algorithm. See the Properties Panel sketch.
+3. User inputs the data that will train the neural network as well as any test data.
+4. User runs neural network and produces various statistics on the algorithm (i.e. accuracy) as well as outputting the result for each input to the network.
+
+## Creating and Running Automata
+
+A student of models of computation will create and run a graph representing some automata such as a deterministic finite automata. See the Files Panel for an example of such a graph.
+
+### Steps
+
+1. Student selects the desired automata to create. See New Dialog sketch.
+2. Student designs and inputs a valid automata graph into Sinap. See the input panel sketch.
+3. Student selects some input to run against the graph.
+4. Sinap interpreter runs the graph with the given input.
+5. Sinap displays the output of the computation (generally true or false for if the input is in the formal language specified by the automata).
+
+## Student Testing Graphs
+
+A student will write and execute tests against a graph they designed to evaluate if it performs as expected. See the Test Panel sketch.
+
+### Steps
+
+1. Student creates tests by specifying inputs and outputs.
+2. Student runs these tests in Sinap against some particular graph.
+3. Sinap will run each of these tests and verify that the actual output matches the expected output.
+4. The results of the tests will be displayed to the user.
+
+## TA Runs Tests
+
+A TA of models of computation will load a student's graph into Sinap and run a pre-written common set of tests against the student's graph. See Test Panel sketch.
+
+### Steps
+
+1. TA starts Sinap and selects a suite of tests for a particular assignment.
+2. Sinap loads these tests without an input graph. See Blank Canvas sketch.
+3. TA will select a student graph to evaluate.
+4. The student's graph will be loaded by Sinap into the main screen.
+5. TA executes tests against the graph and views output.
+6. TA loads another student's graph and goes back to step 3 continuing until all students' graphs are graded.
+    * Note that the tests will only need to be selected and loaded once.
