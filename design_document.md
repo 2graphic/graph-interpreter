@@ -60,7 +60,7 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 ![Sinap architecture](pictures/architecture.pdf){ width=70% }
 
 ### Main GUI
-Sinap will present a GUI to the user as it's primary interface. This GUI will be implemented with Angular 2 and Electron. Most of the GUI will be built with the regular Angular components. The graph-editor will be a custom Angular component which will draw its interface with a HTML canvas tag. We are still determining whether we will have any other custom components. We might build components to take input of various types (such as custom `image` or `list` input components),
+Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. Most of the GUI will be built with the regular Angular components. The graph-editor will be a custom Angular component which will draw its interface with a HTML canvas tag. We are still determining whether we will have any other custom components. We might build components to take input of various types (such as custom `image` or `list` input components),
 
 ### Plug-in Interface
 Modules for sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
