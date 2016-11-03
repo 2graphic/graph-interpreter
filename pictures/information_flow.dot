@@ -1,0 +1,35 @@
+digraph G {
+	// global graph settings
+	margin="0"; rankdir="TB"; splines=spline;
+	edge [color="#888888", style=solid, arrowsize=1.4, penwidth=2.4];
+	node [style="solid", color="#777777", penwidth=1.5, shape=rect];
+
+	subgraph guis {
+		node[style=filled, color="#fffe99"];
+
+		"Graph Editor";
+		"Input View" [label="Input/Test View"];
+		"Debug View";
+	}
+
+	subgraph plugins {
+		node[style=filled, color="#99e6ff"];
+
+		"Meta Language";
+		"Interpreter";
+	}
+
+//	{rank=same
+//		"Input View";
+//		"Debug View";
+//		Interpreter;
+//	}
+
+	"Meta Language" -> "Graph Editor" [label="Graph type information"];
+	"Graph Editor" -> "Interpreter" [label="Valid Graph"];
+	"Interpreter" -> "Input View" [label="Program input types"];
+	"Input View" -> Interpreter [label=Input];
+	Interpreter -> "Input View" [label=Output];
+	"Debug View" -> Interpreter [label="Debug Commands"];
+	Interpreter -> "Debug View" [label="Debug Output"];
+}
