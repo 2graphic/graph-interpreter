@@ -14,6 +14,9 @@ workflow.html: workflow.md graph1.pdf
 graph1.pdf: graph1.dot
 	dot graph1.dot -Gdpi=50 -Tpdf -o graph1.pdf
 
+pictures/architecture.pdf: pictures/architecture.dot
+	dot pictures/architecture.dot -Tpdf -o pictures/architecture.pdf
+
 design_document.pdf: design_document.md pictures/architecture.pdf pictures/example_graph.pdf
 	pandoc design_document.md -o design_document.pdf --toc  -V geometry:margin=1in --latex-engine xelatex
 

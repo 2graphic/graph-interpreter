@@ -26,8 +26,6 @@ While Sinap does seek to be a general purpose IDE for manipulating and working w
 
 It is key to note that both plugins are indeed plugins to Sinap and that the core program merely provides functionality that plugins may utilize to design, manipulate, and analyze various kinds of graphs as defined by the plugins. The two primary components that will be controlled and supplied through plugins will be an interpreter for carrying out operations on the graphs as well as a meta language which will be used by the editor component of Sinap to render and manipulate the graph. The interpreter is invoked by the editor component which may be fed inputs as requested by the interpreter and will produce some output. See figure 2 for the flow of the architecture.
 
-![Sinap architecture](pictures/architecture.pdf){ width=70% }
-
 # Background
 ## Domain Specific Graphic-Based Languages
 
@@ -59,7 +57,22 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 > In this section of the document, you will define three things. 1) What are the major components of the software system (what is the software architecture)? 2) What component is each team member primarily responsible for. 3) What features will the software have.
 
 ## System Architecture
-> A written description of each major software component that your system will have. This write-up should be a high-level description of the modules your system will include and explain how those components will function together. You should clearly indicate which modules you'll be developing yourselves and which modules will be pre-existing packages or programs. You may also wish to include a system design picture/diagram showing how these modules will communicate and be integrated.
+![Sinap architecture](pictures/architecture.pdf){ width=70% }
+
+### Main GUI
+Sinap will present a GUI to the user as it's primary interface. This GUI will be implemented with Angular 2 and Electron. Most of the GUI will be built with the regular Angular components. The graph-editor will be a custom Angular component which will draw its interface with a HTML canvas tag. We are still determining whether we will have any other custom components. We might build components to take input of various types (such as custom `image` or `list` input components),
+
+### Plug-in Interface
+Modules for sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
+
+1. Descriptions of what constitutes a valid graph to the editor GUI
+    a. Valid kinds of nodes and edges
+    b. Required nodes and/or edges
+    c. Restrictions on what nodes match with which edges
+2. Valid graphs to the interpreter
+3. What constitutes valid input to the input/test views
+4. Program inputs to the interpreter
+5. Interpreter state to the debugger view and output to the test/input views
 
 ## Personnel
 > For each major software component in your system, indicate which person will be responsible for its completion and briefly describe why that person is qualified to be responsible for it (i.e., explain the relevant background that the person has which makes that person particularly well-suited to create that component). Everyone on the team should have responsibility for *at least* one component. If a component for which a student is responsible does not come to fruition, the grade for that individual will be lowered.

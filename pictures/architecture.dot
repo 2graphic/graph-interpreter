@@ -1,0 +1,47 @@
+digraph G {
+	// global graph settings
+	margin="0"; rankdir="LR"; splines=spline; node [shape="rect"];
+	edge [color="#888888", style=solid, arrowsize=1.4, penwidth=2.4];
+	node [style="solid", color="#777777", width=2.2; penwidth=1.5];
+
+	subgraph sections {
+		margin="10"; rankdir="TB"; fontname="times bold"; fontsize="18"; style=filled; 
+		subgraph cluster_0 {
+			color="#fffe99";
+			label = "Main GUI";
+
+			"Graph Editor";
+			"Input View" [label="Input/Test View"];
+			"Debug View";
+		}
+
+		subgraph cluster_1 {
+			label = "API"; 
+			color="#b8ff99";
+
+			"Graph type information";
+			"Valid Graph";
+			"Program input types";
+			"Debug Interface";
+			"Input";
+			"Output";
+		}
+
+		subgraph cluster_2 {
+			label = "Module";
+			color="#99e6ff";
+
+			"Meta Language";
+			"Interpreter";
+		}
+	}
+
+	"Meta Language" -> "Graph type information" -> "Graph Editor";
+	"Graph Editor" -> "Valid Graph" -> "Interpreter";
+	"Interpreter" -> "Program input types" -> "Input View";
+	Interpreter -> "Debug Interface" -> "Debug View";
+	"Debug View" -> "Debug Interface" -> Interpreter;
+
+	"Input View" -> Input -> Interpreter;
+	Interpreter -> Output -> "Input View";
+}
