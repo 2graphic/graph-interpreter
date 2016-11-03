@@ -59,11 +59,13 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 ## System Architecture
 ![Sinap architecture](pictures/architecture.pdf){ width=70% }
 
+While sinap is running, it will be broken into 3 main components: the active plug-in, the main GUI, and the plug-in interface. 
+
 ### Main GUI
 Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. Most of the GUI will be built with the regular Angular components. The graph-editor will be a custom Angular component which will draw its interface with a HTML canvas tag. We are still determining whether we will have any other custom components. We might build components to take input of various types (such as custom `image` or `list` input components),
 
 ### Plug-in Interface
-Modules for sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
+Plug-ins for sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
 
 1. Descriptions of what constitutes a valid graph to the editor GUI
     a. Valid kinds of nodes and edges
@@ -73,6 +75,9 @@ Modules for sinap will communicate via a single API (the Plug-in Interface). Thi
 3. What constitutes valid input to the input/test views
 4. Program inputs to the interpreter
 5. Interpreter state to the debugger view and output to the test/input views
+
+### Command Line Interface
+In addition to the main GUI, a CLI will be provided for the plug-in interface so that interpreters can be invoked from the command line. This will simplify testing of the plug-in interface and allow sinap programs to be decoupled from the sinap IDE. 
 
 ## Personnel
 > For each major software component in your system, indicate which person will be responsible for its completion and briefly describe why that person is qualified to be responsible for it (i.e., explain the relevant background that the person has which makes that person particularly well-suited to create that component). Everyone on the team should have responsibility for *at least* one component. If a component for which a student is responsible does not come to fruition, the grade for that individual will be lowered.

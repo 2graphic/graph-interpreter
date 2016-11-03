@@ -22,13 +22,14 @@ digraph G {
 			"Graph type information";
 			"Valid Graph";
 			"Program input types";
-			"Debug Interface";
 			"Input";
 			"Output";
+			"Debug Commands";
+			"Debug Output";
 		}
 
 		subgraph cluster_2 {
-			label = "Module";
+			label = "Plugin";
 			color="#99e6ff";
 
 			"Meta Language";
@@ -39,9 +40,8 @@ digraph G {
 	"Meta Language" -> "Graph type information" -> "Graph Editor";
 	"Graph Editor" -> "Valid Graph" -> "Interpreter";
 	"Interpreter" -> "Program input types" -> "Input View";
-	Interpreter -> "Debug Interface" -> "Debug View";
-	"Debug View" -> "Debug Interface" -> Interpreter;
-
 	"Input View" -> Input -> Interpreter;
 	Interpreter -> Output -> "Input View";
+	"Debug View" -> "Debug Commands" -> Interpreter;
+	Interpreter -> "Debug Output" -> "Debug View";
 }
