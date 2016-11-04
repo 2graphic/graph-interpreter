@@ -84,45 +84,41 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 
 ## System Features
 ### Base Features
-IDE:
-    Graph Editor: A canvas component that will allow a user to create and edit graphs.
-    Zooming: Whole IDE will be zoomable (text, etc...)
-    Properties Panel: Edit both plugin specific values and display values for nodes and edges.
-    Toolbox Panel: Allow user to select node types and edge types
-    Test Panel: Allow to specify list of test cases with optional expected files. Test cases can be loaded and saved to their own files.
-    Debug Panel: Allow user to set break states and step through interpretation of graph. 
-    Plugin Managment: Group plugins by type and allow users to install/delete plugins. Plugins register which file types they open.
-
+* __IDE:__
+    * _Graph Editor:_ A canvas component that will allow a user to create and edit graphs.
+    * _Zooming:_ Whole IDE will be zoomable (text, etc...)
+    * _Properties Panel:_ Edit both plugin specific values and display values for nodes and edges.
+    * _Toolbox Panel:_ Allow user to select node types and edge types
+    * _Test Panel:_ Allow to specify list of test cases with optional expected files. Test cases can be loaded and saved to their own files.
+    * _Debug Panel:_ Allow user to set break states and step through interpretation of graph. 
+    * _Plugin Managment:_ Group plugins by type and allow users to install/delete plugins. Plugins register which file types they open.
+* __FLAP Plugin:__ A collection of plugins to allow users to build automata.
+    * _Support for:_ Finite Automaton, Mealy Machine, Moore Machine, Pushdown Automaton, Turing Machine, Multi-Tape Turing Machine, Grammars
+* Run on all three platforms (macOS, Windows, Linux)
 
 
 ### Planned Features
-IDE:
-    Reverse Debugger: Allow user to step backwards through interpretation of graph once a break state is hit.
-    Run Panel: REPL to provide quick input/output.
-    Input Types: Plugins provide type annotations for the kind of input they expect (images, text, etc...)
-    Files Panel: View list of files in current project.
-
-FLAP Plugin:
-    Embed subgraphs into graph.
-
-Machine Learning Plugin: A plugin that allows users to prototype ML algorithms.
-
-Scritable Inteface: Allow a batch of graphs to be run with set of input easily.
+* __IDE__
+    * _Reverse Debugger:_ Allow user to step backwards through interpretation of graph once a break state is hit.
+    * _Run Panel:_ REPL to provide quick input/output.
+    * _Input Types:_ Plugins provide type annotations for the kind of input they expect (images, text, etc...)
+    * _Files Panel:_ View list of files in current project.
+* __FLAP Plugin:__
+    * Embed subgraphs into graph.
+* __Machine Learning Plugin:__ A plugin that allows users to prototype ML algorithms.
+* __Scritable Inteface:__ Allow a batch of graphs to be run with set of input easily.
 
 
 
 ### Advanced Features
-IDE: 
-    Auto Format graphs nicely.
-    Allow users to use stylus/drawing to create graphs and recognize shapes.
-
-FLAP Plugin:
-    Reading and writing JFLAP files.
-    Export code to simulate graph and interpretation.
-
-Other minor plugins to show off power of Sinap.
-
-Plugins that change behaviour of Sinap. (ie plugin for submitting homework files.)
+* __IDE:__
+    * Auto Format graphs nicely.
+    * Allow users to use stylus/drawing to create graphs and recognize shapes.
+* __FLAP Plugin:__
+    * Reading and writing JFLAP files.
+    * Export code to simulate graph and interpretation.
+* Other minor plugins to show off power of Sinap.
+* Plugins that change behaviour of Sinap. (ie plugin for submitting homework files.)
 
 # Software Engineering Tools and Techniques (1 page)
 > Your document should list what software engineering tools and techniques you plan to use, (e.g., versioning, bug-tracking, video conferencing, agile, scrum, stand-up meetings, etc.).
