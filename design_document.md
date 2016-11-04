@@ -62,7 +62,7 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 While sinap is running, it will be broken into 3 main components: the active plug-in, the main GUI, and the plug-in interface. 
 
 ### Main GUI
-Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. Most of the GUI will be built with the regular Angular components. The graph-editor will be a custom Angular component which will draw its interface with a HTML canvas tag. We are still determining whether we will have any other custom components. We might build components to take input of various types (such as custom `image` or `list` input components),
+Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. The graph-editor will be majorily a self contained editor inside an HTML canvas tag. The graph-editor will be built into a component to communicate with the rest of the angular system.^[We went a presentation by the company that created Lucid Chart. This is the approach they used to build their chart editor into their angular application.] We will also build components that handle input of various arbitrary types (such as custom `image` or `list` input components). These components will be used to feed the plugins input and display the output.
 
 ### Plug-in Interface
 Plug-ins for sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
