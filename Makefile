@@ -14,6 +14,9 @@ workflow.html: workflow.md graph1.pdf
 graph1.pdf: graph1.dot
 	dot graph1.dot -Gdpi=50 -Tpdf -o graph1.pdf
 
+pictures/information_flow.pdf: pictures/information_flow.dot
+	dot pictures/information_flow.dot -Tpdf -o pictures/information_flow.pdf
+
 pictures/architecture.pdf: pictures/architecture.dot
 	dot pictures/architecture.dot -Tpdf -o pictures/architecture.pdf
 
