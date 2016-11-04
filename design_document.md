@@ -83,24 +83,46 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 > For each major software component in your system, indicate which person will be responsible for its completion and briefly describe why that person is qualified to be responsible for it (i.e., explain the relevant background that the person has which makes that person particularly well-suited to create that component). Everyone on the team should have responsibility for *at least* one component. If a component for which a student is responsible does not come to fruition, the grade for that individual will be lowered.
 
 ## System Features
-> List the features and functionalities that you would like your system to have by the end of the semester. Rank each feature by its relative priority (see below). Note, features are related to components, but are more specific. For example, networking is a component, but the ability to transmit streaming video is a feature.
+### Base Features
+IDE:
+    Graph Editor: A canvas component that will allow a user to create and edit graphs.
+    Zooming: Whole IDE will be zoomable (text, etc...)
+    Properties Panel: Edit both plugin specific values and display values for nodes and edges.
+    Toolbox Panel: Allow user to select node types and edge types
+    Test Panel: Allow to specify list of test cases with optional expected files. Test cases can be loaded and saved to their own files.
+    Debug Panel: Allow user to set break states and step through interpretation of graph. 
+    Plugin Managment: Group plugins by type and allow users to install/delete plugins. Plugins register which file types they open.
 
-### Rank 1: Bare Essentials
-> Without these features and functions, your system just wouldn't work at all. For example, for multi-person games, networking capabilities are essential.
 
-> Failure to complete these would result in a non-working system with little to no functionality or worth to the user.
 
-### Rank 2: Planned Features
-> Features and functions that you expect your system to have by the final deliverable demonstration (in addition to the bare essentials).
+### Planned Features
+IDE:
+    Reverse Debugger: Allow user to step backwards through interpretation of graph once a break state is hit.
+    Run Panel: REPL to provide quick input/output.
+    Input Types: Plugins provide type annotations for the kind of input they expect (images, text, etc...)
+    Files Panel: View list of files in current project.
 
-> Completion of these features would result in a working (if minimal) system. Most companies would consider this somewhere between an Alpha and a Beta system.
+FLAP Plugin:
+    Embed subgraphs into graph.
 
-### Rank 3: Bells and Whistles
-> Features and functions that would be super cool and you would love to have in your system, but realistically you're not sure whether you'll have the time to get all of them done.
+Machine Learning Plugin: A plugin that allows users to prototype ML algorithms.
 
->Rank 1 features are required to get a passing grade on your project. Rank 2 features must be achieved to be considered for a B grade. Rank 3 features will enhance your grade further and put you into A grade territory. Please note these are only guidelines, and in order to receive an A grade your project must impress us and go well above and beyond the basic requirements.
+Scritable Inteface: Allow a batch of graphs to be run with set of input easily.
 
-> **Polished vs Feature-Rich**. At the end of the day, you may have to decide between producing a very polished project, with fewer features, or a feature rich project that is "ragged" around the edges. It is in your best interest to provide very clean, good looking, useful functionality, even if this results in less functionality.
+
+
+### Advanced Features
+IDE: 
+    Auto Format graphs nicely.
+    Allow users to use stylus/drawing to create graphs and recognize shapes.
+
+FLAP Plugin:
+    Reading and writing JFLAP files.
+    Export code to simulate graph and interpretation.
+
+Other minor plugins to show off power of Sinap.
+
+Plugins that change behaviour of Sinap. (ie plugin for submitting homework files.)
 
 # Software Engineering Tools and Techniques (1 page)
 > Your document should list what software engineering tools and techniques you plan to use, (e.g., versioning, bug-tracking, video conferencing, agile, scrum, stand-up meetings, etc.).
