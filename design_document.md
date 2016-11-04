@@ -106,7 +106,7 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 * __FLAP Plugin:__
     * Embed subgraphs into graph.
 * __Machine Learning Plugin:__ A plugin that allows users to prototype ML algorithms.
-* __Scritable Inteface:__ Allow a batch of graphs to be run with set of input easily.
+* __Scriptable Inteface:__ Allow a batch of graphs to be run with sets of input easily.
 
 
 
