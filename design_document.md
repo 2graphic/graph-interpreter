@@ -53,24 +53,24 @@ Sinap will be free and open source. Therefore, we have been careful to verify th
 ## Software Requirements
 Because Sinap will be developed using Electron, it will be bundled as an installation package for each major OS: macOS, Linux, and Windows. Users will only need to download and run the appropriate installer for their OS in order to be able to use Sinap.
 
-# Requrements Analysis (2-3 pages)
+# Requrements Analysis
 
 ## System Architecture
 ![Sinap architecture](pictures/architecture.pdf){ width=70% }
 
-While sinap is running, it will be broken into 3 main components: the active plug-in, the main GUI, and the plug-in interface. 
+Sinap will be broken into 3 main components: the active plug-in, the main GUI, and the plug-in interface. 
 
 ### Main GUI
-Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. The graph-editor will be majorily a self contained editor inside an HTML canvas tag. The graph-editor will be built into a component to communicate with the rest of the angular system.^[We went a presentation by the company that created Lucid Chart. This is the approach they used to build their chart editor into their angular application.] We will also build components that handle input of various arbitrary types (such as custom `image` or `list` input components). These components will be used to feed the plugins input and display the output.
+Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. The graph-editor will be a self contained editor inside an HTML canvas tag. It will be built into a component^[We went to a presentation by the company that created Lucid Chart. This is the approach they used to build their chart editor into their application.] to communicate with the rest of the Angular system. We will also build components that handle inputs of various arbitrary types (such as custom `image` or `list` input components). These components will be used to feed the plugins input and display the output.
 
 ### Plug-in Interface
-Plug-ins for sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
+Plug-ins for Sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
 
-1. Descriptions of what constitutes a valid graph to the editor GUI
+1. Descriptions of what constitutes a valid graph to the editor GUI^[The editor GUI is a separate concern from the interpreter and will be a part of its own component.]
     a. Valid kinds of nodes and edges
     b. Required nodes and/or edges
     c. Restrictions on what nodes match with which edges
-2. Valid graphs to the interpreter
+2. Valid graphs to the interpreter^[The interpreter is a separate concern from the editor GUI and will be a part of its own component.]
 3. What constitutes valid input to the input/test views
 4. Program inputs to the interpreter
 5. Interpreter state to the debugger view and output to the test/input views
@@ -79,7 +79,10 @@ Plug-ins for sinap will communicate via a single API (the Plug-in Interface). Th
 In addition to the main GUI, a CLI will be provided for the plug-in interface so that interpreters can be invoked from the command line. This will simplify testing of the plug-in interface and allow sinap programs to be decoupled from the sinap IDE. 
 
 ## Personnel
-> For each major software component in your system, indicate which person will be responsible for its completion and briefly describe why that person is qualified to be responsible for it (i.e., explain the relevant background that the person has which makes that person particularly well-suited to create that component). Everyone on the team should have responsibility for *at least* one component. If a component for which a student is responsible does not come to fruition, the grade for that individual will be lowered.
+* __Sheyne Anderson__ will be responsible for developing the Plugin API.
+* __CJ Dimaano__ will be responsible for developing the visual graph-editor component. His experience includes working with the HTML 5 canvas element from taking CS 4600 - Computer Graphics.
+* __Dyllon Gagnier__ will be responsible for developing the CLI.
+* __Daniel James__ will be responsible for the main GUI. His experience includes having worked on and being in charge of Algular apps in his past two internships.
 
 ## System Features
 ### Base Features
@@ -88,9 +91,9 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
     * _Zooming:_ Whole IDE will be zoomable (text, etc...)
     * _Properties Panel:_ Edit both plugin specific values and display values for nodes and edges.
     * _Toolbox Panel:_ Allow user to select node types and edge types
-    * _Test Panel:_ Allow to specify list of test cases with optional expected files. Test cases can be loaded and saved to their own files.
     * _Debug Panel:_ Allow user to set break states and step through interpretation of graph. 
     * _Plugin Managment:_ Group plugins by type and allow users to install/delete plugins. Plugins register which file types they open.
+    * _Run Panel:_ REPL to provide quick input/output.
 * __FLAP Plugin:__ A collection of plugins to allow users to build automata.
     * _Support for:_ Finite Automaton, Mealy Machine, Moore Machine, Pushdown Automaton, Turing Machine, Multi-Tape Turing Machine, Grammars
 * Run on all three platforms (macOS, Windows, Linux)
@@ -98,10 +101,10 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 
 ### Planned Features
 * __IDE__
-    * _Reverse Debugger:_ Allow user to step backwards through interpretation of graph once a break state is hit.
-    * _Run Panel:_ REPL to provide quick input/output.
+    * Auto Format graphs nicely.
     * _Input Types:_ Plugins provide type annotations for the kind of input they expect (images, text, etc...)
     * _Files Panel:_ View list of files in current project.
+    * _Test Panel:_ Allow to specify list of test cases with optional expected files. Test cases can be loaded and saved to their own files.
 * __FLAP Plugin:__
     * Embed subgraphs into graph.
 * __Machine Learning Plugin:__ A plugin that allows users to prototype ML algorithms.
@@ -111,8 +114,8 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 
 ### Advanced Features
 * __IDE:__
-    * Auto Format graphs nicely.
     * Allow users to use stylus/drawing to create graphs and recognize shapes.
+    * _Reverse Debugger:_ Allow user to step backwards through interpretation of graph once a break state is hit.
 * __FLAP Plugin:__
     * Reading and writing JFLAP files.
     * Export code to simulate graph and interpretation.
