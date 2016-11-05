@@ -22,43 +22,43 @@ However, while there are countless tools for manipulating, analyzing, executing,
 
 ## SINAP Architecture
 
-While Sinap does seek to be a general purpose IDE for manipulating and working with graphs, it is specifically focused upon education, and particularly on teaching various models of computing such as turing machines, push down automata, and state machines. Therefore, the formal languages and automata plugin (FLAP) will be a key series of components in the Sinap project. Additionally, 2graphic is planning on implementing a neural networks plugin that will serve both as an independently useful component as well as demonstrating the generality of Sinap in working with different kinds of graphs.
+While Sinap does seek to be a general purpose IDE for manipulating and working with graphs, it is specifically focused upon education, and particularly on teaching various models of computing such as Turing machines, push down automata, and state machines. Therefore, the formal languages and automata plugin (FLAP) will be a key series of components in the Sinap project. Additionally, 2graphic is planning on implementing a neural networks plugin that will serve both as an independently useful component as well as demonstrating the generality of Sinap in working with different kinds of graphs.
 
 It is key to note that both plugins are indeed plugins to Sinap and that the core program merely provides functionality that plugins may utilize to design, manipulate, and analyze various kinds of graphs as defined by the plugins. The two primary components that will be controlled and supplied through plugins will be an interpreter for carrying out operations on the graphs as well as a meta language which will be used by the editor component of Sinap to render and manipulate the graph. The interpreter is invoked by the editor component which may be fed inputs as requested by the interpreter and will produce some output. See figure 2 for the flow of the architecture.
 
 # Background
 ## Domain Specific Graphic-Based Languages
 
-A domain specific graphic-based language (DSGL) is a programming language that can be described in terms of nodes and edges that is created to solve a problem in a specific domain. A DSGL consists of a grammer and an interpreter. The grammar is a description of valid programs for the interpreter and is written in the graph meta-language. The interpreter runs valid graphs by feeding them input and producing output.
+A domain specific graphic-based language (DSGL) is a programming language that can be described in terms of nodes and edges that is created to solve a problem in a specific domain. A DSGL consists of a grammar and an interpreter. The grammar is a description of valid programs for the interpreter and is written in the graph meta-language. The interpreter runs valid graphs by feeding them input and producing output.
 
 For example, the traditional circuit drawings used in electrical engineering present one example of a DSGL. In this instance, the nodes would be the various electrical components such as resistors, capacitors, and inductors while the edges represent wires connecting the components. Some inputs that might be used in this system could be an input voltage/current in the case that the circuit being represented was part of a larger circuit. Operations that can be performed on circuits might be simply reporting a particular output voltage/current at particular points, evaluating the stability of the system, etc.
 
 ## Idea Space
 
-Sinap bears a passing resemblance to such diverse products as [JFLAP](http://www.jflap.org) and [NI LabView](http://www.ni.com/labview/). LabView is a great example of a general purpose graph-based programming environment. Sinap will allow the creation and maniplation of graphs for laguages that are not applicable to general purpose programming and as such are able to more efficiently express ideas within their specific domains. Sinap will not be a direct competitior with LabView.
+Sinap bears a passing resemblance to such diverse products as [JFLAP](http://www.jflap.org) and [NI LabView](http://www.ni.com/labview/). LabView is a great example of a general purpose graph-based programming environment. Sinap will allow the creation and manipulation of graphs for languages that are not applicable to general purpose programming and as such are able to more efficiently express ideas within their specific domains. Sinap will not be a direct competitor with LabView.
 
 JFLAP is an environment in which users can create various formal machines, languages, and automata. It allows the user to step through the interpretation of these systems and convert between various classes of machines.
 
-JFLAP provides an example of why Sinap is necessary. JFLAP is a great idea with some solid business logic, but is a nightmare for the end user. Sinap will allow the seperation of the core buisness logic of JFLAP from the tedius task of building a GUI to expose the creation and simulation of these machines. By providing all the boilerplate components for graph editing and input/output control, Sinap will allow for an implementation of JFLAP's core features in a way that is more maintainable by allowing the logic to be focused on a single task: interpretation of graphs.
+JFLAP provides an example of why Sinap is necessary. JFLAP is a great idea with some solid business logic, but is a nightmare for the end user. Sinap will allow the separation of the core business logic of JFLAP from the tedious task of building a GUI to expose the creation and simulation of these machines. By providing all the boilerplate components for graph editing and input/output control, Sinap will allow for an implementation of JFLAP's core features in a way that is more maintainable by allowing the logic to be focused on a single task: interpretation of graphs.
 
-In general Sinap will allow the creation of interpreters for graph-based languages in a generic way that keeps a strict separation of concerns with regards to execution and user input. It will make the design of graph specific laguage interpreters simpler, faster, and more robust. For the end user this means that they will experience a consisitant environment for developing programs in various DSGLs.
+In general Sinap will allow the creation of interpreters for graph-based languages in a generic way that keeps a strict separation of concerns with regards to execution and user input. It will make the design of graph specific language interpreters simpler, faster, and more robust. For the end user this means that they will experience a consistent environment for developing programs in various DSGLs.
 
 ## Required Technology
-We will take advantage of modern web technologies to create a cross-platform application. This will allow us to target all possible users without having three separate projects for UI code. Sinap will be a stand-alone and static application, requiring no backend features. We will leverage [Electron](http://electron.atom.io) or a similar project to bundle our application for all major operating systems. Another advantage of using Electron is the ability to access raw hardware and the filesystem. These features are not easily accessible in traditional web applications in the browser due to privacy concerns.
+We will take advantage of modern web technologies to create a cross-platform application. This will allow us to target all possible users without having three separate projects for UI code. Sinap will be a stand-alone and static application, requiring no backend features. We will leverage [Electron](http://electron.atom.io) or a similar project to bundle our application for all major operating systems. Another advantage of using Electron is the ability to access raw hardware and the file system. These features are not easily accessible in traditional web applications in the browser due to privacy concerns.
 
 In order to create maintainable and readable code, we will use [Typescript](https://www.typescriptlang.org) for the majority of our project. Typescript is a super-set of Javascript with optional types and support for ES6 features. We will leverage [Angular 2](https://angular.io) to simplify UI development and help break the project up into modular components.
 
-Sinap will be free and open source. Therefore, we have been careful to verify that the existing technologies we are using will have appropriate licencing.
+Sinap will be free and open source. Therefore, we have been careful to verify that the existing technologies we are using will have appropriate licensing.
 
 ## Software Requirements
-Because Sinap will be developed using Electron, it will be bundled as an installation package for each major OS: macOS, Linux, and Windows. Users will only need to download and run the appropriate installer for their OS in order to be able to use Sinap.
+Because Sinap will be developed using Electron, it will be bundled as an installation package for each major OS: MacOS, Linux, and Windows. Users will only need to download and run the appropriate installer for their OS in order to be able to use Sinap.
 
-# Requrements Analysis
+# Requirements Analysis
 
 ## System Architecture
 ![Sinap architecture](pictures/architecture.pdf){ width=70% }
 
-Sinap will be broken into 3 main components: the active plug-in, the main GUI, and the plug-in interface. 
+Sinap will be broken into 3 main components: the active plug-in, the main GUI, and the plug-in interface.
 
 ### Main GUI
 Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. The graph-editor will be a self contained editor inside an HTML canvas tag. It will be built into a component^[We went to a presentation by the company that created Lucid Chart. This is the approach they used to build their chart editor into their application.] to communicate with the rest of the Angular system. We will also build components that handle inputs of various arbitrary types (such as custom `image` or `list` input components). These components will be used to feed the plugins input and display the output.
@@ -76,13 +76,13 @@ Plug-ins for Sinap will communicate via a single API (the Plug-in Interface). Th
 5. Interpreter state to the debugger view and output to the test/input views
 
 ### Command Line Interface
-In addition to the main GUI, a CLI will be provided for the plug-in interface so that interpreters can be invoked from the command line. This will simplify testing of the plug-in interface and allow sinap programs to be decoupled from the sinap IDE. 
+In addition to the main GUI, a CLI will be provided for the plug-in interface so that interpreters can be invoked from the command line. This will simplify testing of the plug-in interface and allow Sinap programs to be decoupled from the Sinap IDE.
 
 ## Personnel
-* __Sheyne Anderson__ will be responsible for developing the Plugin API.
+* __Sheyne Anderson__ will be responsible for developing the Plugin API. His qualifications include over ten years of development across a wide variety of areas and fields giving him a broad perspective of utilizing and creating APIs.
 * __CJ Dimaano__ will be responsible for developing the visual graph-editor component. His experience includes working with the HTML 5 canvas element from taking CS 4600 - Computer Graphics.
-* __Dyllon Gagnier__ will be responsible for developing the CLI.
-* __Daniel James__ will be responsible for the main GUI. His experience includes having worked on and being in charge of Algular apps in his past two internships.
+* __Dyllon Gagnier__ will be responsible for developing the CLI. His experience includes designing a command line testing framework for MIPS that was utilized in CS 3810, Computer Organization, at the University of Utah.
+* __Daniel James__ will be responsible for the main GUI. His experience includes having worked on and being in charge of Angular apps in his past two internships.
 
 ## System Features
 ### Base Features
@@ -91,8 +91,8 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
     * _Zooming:_ Whole IDE will be zoomable (text, etc...)
     * _Properties Panel:_ Edit both plugin specific values and display values for nodes and edges.
     * _Toolbox Panel:_ Allow user to select node types and edge types
-    * _Debug Panel:_ Allow user to set break states and step through interpretation of graph. 
-    * _Plugin Managment:_ Group plugins by type and allow users to install/delete plugins. Plugins register which file types they open.
+    * _Debug Panel:_ Allow user to set break states and step through interpretation of graph.
+    * _Plugin Management:_ Group plugins by type and allow users to install/delete plugins. Plugins register which file types they open.
     * _Run Panel:_ REPL to provide quick input/output.
 * __FLAP Plugin:__ A collection of plugins to allow users to build automata.
     * _Support for:_ Finite Automaton, Mealy Machine, Moore Machine, Pushdown Automaton, Turing Machine, Multi-Tape Turing Machine, Grammars
@@ -108,7 +108,7 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 * __FLAP Plugin:__
     * Embed subgraphs into graph.
 * __Machine Learning Plugin:__ A plugin that allows users to prototype ML algorithms.
-* __Scriptable Inteface:__ Allow a batch of graphs to be run with sets of input easily.
+* __Scriptable Interface:__ Allow a batch of graphs to be run with sets of input easily.
 
 
 
@@ -120,7 +120,7 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
     * Reading and writing JFLAP files.
     * Export code to simulate graph and interpretation.
 * Other minor plugins to show off power of Sinap.
-* Plugins that change behaviour of Sinap. (ie plugin for submitting homework files.)
+* Plugins that change behavior of Sinap. (ie plugin for submitting homework files.)
 
 # Software Engineering Tools and Techniques (1 page)
 > Your document should list what software engineering tools and techniques you plan to use, (e.g., versioning, bug-tracking, video conferencing, agile, scrum, stand-up meetings, etc.).
