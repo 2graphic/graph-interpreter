@@ -131,7 +131,7 @@ Agile will be used for the development process. Milestone goals will be assigned
 Github will be used for the versioning system. Feature branches in Github will be used to give each member an isolated development workspace where milestone accomplishments can be merged into the master branch.
 
 ## Bug Tracking
-Github issue tracking will be used to track known bugs and assign debugging to appropriate team members. There will be no point system in place for accompishing tasks.
+Github issue tracking will be used to track bugs and enhancements. Issues will be assigned to specific team members. There will be no point system in place for accompishing tasks.
 
 ## Testing
 Test Driven Development will be used for implementing the plugin API. Each major component of the project will be tested individually. The CLI will have unit tests for basic functionality. A test harness will be in place primarily as a sanity check for GUI behavior.
@@ -143,7 +143,7 @@ Github.io will be used to house all documentation for the project. The documenta
 Communication will take place primarily over Slack to discuss development progress as well as any issues that come up. Email and phone communication will be used for high priority messages in the case of emergencies.
 
 ## Team Meetings
-There will be no formal Scrum meetings. Weekly meetings will be held at least twice a week---once during the designated class time when class is not in session and once on Sundays in the afternoon.
+There will be no formal Scrum meetings. Regularly scheduled weekly meetings will be held during designated class time when class is not in session and during Sunday afternoons. Regularly scheduled meetings will last between 1-1.5 hours. Other meetings will be scheduled as needed.
 
 # Timeline (1-2 pages)
 
