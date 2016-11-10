@@ -122,10 +122,31 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 * Other minor plugins to show off power of Sinap.
 * Plugins that change behavior of Sinap. (ie plugin for submitting homework files.)
 
-# Software Engineering Tools and Techniques (1 page)
-> Your document should list what software engineering tools and techniques you plan to use, (e.g., versioning, bug-tracking, video conferencing, agile, scrum, stand-up meetings, etc.).
+# Software Engineering Tools and Techniques
+
+## Development Process
+Agile will be used for the development process. Milestone goals will be assigned for every two to three weeks.
+
+## Versioning
+Github will be used for the versioning system. Feature branches in Github will be used to give each member an isolated development workspace where milestone accomplishments can be merged into the master branch.
+
+## Bug Tracking
+Github issue tracking will be used to track known bugs and assign debugging to appropriate team members. There will be no point system in place for accompishing tasks.
+
+## Testing
+Test Driven Development will be used for implementing the plugin API. Each major component of the project will be tested individually. The CLI will have unit tests for basic functionality. A test harness will be in place primarily as a sanity check for GUI behavior.
+
+## Documentation
+Github.io will be used to house all documentation for the project. The documentation will be split into high level user documentation and plugin development documentation. JSDoc will be used for plugin and public API documentation. Project code will include inline documentation.
+
+## Team Communication
+Communication will take place primarily over Slack to discuss development progress as well as any issues that come up. Email and phone communication will be used for high priority messages in the case of emergencies.
+
+## Team Meetings
+There will be no formal Scrum meetings. Weekly meetings will be held at least twice a week---once during the designated class time when class is not in session and once on Sundays in the afternoon.
 
 # Timeline (1-2 pages)
+
 > Create a schedule that lists the individual goals for each team member for each week of the semester. Create a matrix with one column per team member, and one row for each week in the semester. Inside each cell should be a specific description of what that person is expected to accomplish during that week. It may be helpful to list major benchmarks as well, where that makes sense (e.g., indicate when you expect the database to be fully functional).
 
 > Most of you will feel as though you are guessing -- and that's ok! You will not be held to this exact schedule. But it is extremely useful to do your best to create a realistic schedule now to get experience in planning long-term projects. Equally important, creating this schedule will force you to think about (1) the order in which things need to be done, (2) how long you expect various phases to take, and (3) what you should expect to have accomplished at various points in the semester. This will serve as a guide to help you evaluate your progress during the semester and quickly recognize if things are going much slower or faster than you anticipated.
