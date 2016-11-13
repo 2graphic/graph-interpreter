@@ -1,78 +1,79 @@
 # Planned Features
 - Plugin API
-  - Plugin Description
+  - Plugin Description (rank 1)
     - Plugin Name
     - Plugin Group/Category (e.g. FLAP)
-    - Brief Description
-    - Version
-    - Author
-    - Etc.
-  - Graph Description
-    - Graph Type
-    - Node Types
+    - Brief Description (rank 2)
+    - Version (rank 2)
+    - Author (rank 3)
+    - Etc. (rank 4)
+  - Graph Description (rank 1)
+    - Graph Type (rank 2)
+    - Node Types (rank 1)
+      - General Properties (rank 1)
+      - Visual Properties (rank 2)
+        + included in meta (rank 3)
+      - Private Properties (rank 4)
+    - Edge Types (see above)
       - General Properties
       - Visual Properties
       - Private Properties?
-    - Edge Types
-      - General Properties
-      - Visual Properties
-      - Private Properties?
-  - Interpreter
+  - Interpreter (rank 1)
     - Init Function
       - Can be minimal
-    - Run Function [Optional]
+    - Run Function [Optional] \(rank 2)
       - Step function can be used in place of this
     - Step Function
-    - Reverse Step Function [Optional]
-    - Debug [Optional]
-  - Menu Hooks [Optional]
-  - Import/Export Behavior [Optional]
+    - Reverse Step Function [Optional] \(rank 2)
+    - Debug [Optional] \(rank 2)
+  - Menu Hooks [Optional] \(rank 2)
+  - Import/Export Behavior [Optional] \(rank 3)
     - Primarily for JFLAP
     - Can also be used for .dot files?
-- Graph Editor
-  - Load graph from file
+- Graph Editor (rank 1)
+  - Load graph from file 
   - Draws nodes and edges
-  - Captures Mouse Input
-    - Consider capturing stylus input as well
-  - Supports modes
-    - Selection
+  - Captures Mouse Input 
+    - Consider capturing stylus input as well (rank 3)
+  - Supports modes (rank we need to discuss this further)
+    - Selection 
       - Selected component will bring up properties panel
       - Support for selecting multiple components?
     - Edit
       - Adds nodes/edges to graph
     - Zoom
     - Pan
-- Main Menu
-  - File
-    - New
+- Main Menu (rank 1)
+  - File 
+    - New 
     - Open File
-    - Open Directory/Folder
+    - Open Directory/Folder (rank 2)
     - Open Recent
     - Save File
     - Save File As
     - Save All
-    - Preferences
+    - Preferences (rank 3)
       - User Preferences
       - Workspace Preferences
-    - Import
-    - Export
-    - Revert File
+    - Import (rank 3)
+    - Export (rank 3)
+    - Revert File (rank 3)
     - Close File
     - Close Folder
     - Exit
   - Edit
-    - Undo/Redo
-    - Cut/Copy/Paste
-    - Select All
-    - Delete Selected
-    - Auto Arrange?
-  - Graph
+    - Undo/Redo (rank 1.5)
+    - Cut/Copy/Paste (rank 1.5)
+    - Select All (rank 2)
+    - Delete Selected (rank 1.5)
+    - Auto Arrange? (rank 3)
+  - Graph (rank 1)
     - Run
     - Step
     - Debug
     - Test
-    - [Menu Hook Items from Plugin]
-  - View
+    - [Menu Hook Items from Plugin] \(rank 2)
+  - View (rank 2.5)
     - Files Panel
     - Components Panel
     - Properties Panel
@@ -82,24 +83,24 @@
     - Zoom In/Out
     - Reset Zoom
     - Center Graph
-  - Help
+  - Help (rank 2)
     - About
     - Documentation
-- Document Panel
+- Document Panel (rank 2)
   - Contains tabs for open documents
     - Each open document will contain a Graph Editor component
   - Can be split to show multiple open documents
   - Tabs/Files from Files Panel can be dragged and dropped to one of the edges to enable split view
-- Files/Project Directory Panel
+- Files/Project Directory Panel (rank 2)
   - Groups files into what is available in the directory and what is actively open
   - Can create files and directories from the panel
-  - Shows which files have pending changes to be saved
-- Components Panel
+  - Shows which files have pending changes to be saved (rank 1)
+- Components Panel (rank 1)
   - Groups components into nodes and edges
     - Components can be dragged and dropped onto the graph editor
-      - The previously dragged component will be set as the active component for Edit Mode
-        - A single node and a single edge can both be simultaneously active
-  - "General" groupings
+      - The previously dragged component will be set as the active component for Edit Mode (rank 2)
+        - A single node and a single edge can both be simultaneously active (rank 2)
+  - "General" groupings (we're still arguing about this)
     - Selector for selecting components on the editor
     - Eraser for deleting components with the mouse (can also select components and use delete key)
     - Pen for freehand
@@ -107,19 +108,20 @@
       - Line gesture from node to node will draw edge (line gestures must begin and end at a node)
     - Magnifying Glass for Zoom
     - Hand for pan
-- Properties Panel
+- Properties Panel (rank 1)
   - Displays general component properties defined by loaded plugin
-    - Be sure to include component type (so it can be changed from here)
-  - Displays visual properties
-- Input/Output Panel
+    - Be sure to include component type (so it can be changed from here) (rank 1)
+  - Displays visual properties (rank 2)
+- Input/Output Panel (rank 0)
   - REPL flow
-- Unit Testing Panel
+- Unit Testing Panel (rank 2)
   - Inputs
   - Expected Outputs
   - Result
-- Debug Panel
+- Debug Panel (rank 2.2)
   - What?
-- CLI
+- JS API (rank 2)
+- CLI (rank 3)
   - Yes.
 
 
