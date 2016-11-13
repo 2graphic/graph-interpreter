@@ -130,7 +130,7 @@ Agile will be used for the development process. What this means is that we will 
 
 ## Versioning
 
-[GitHub](https://github.com/) will be used for the versioning system. Feature branches in GitHub will be used to give each member an isolated development workspace where milestone accomplishments can be merged into the master branch. Feature branches will be merged back to master every one to two weeks. Therefore, work done by individual team members will be mostly isolated except for a few merges per week.
+[GitHub](https://github.com/) will be used for the versioning system. Feature branches in GitHub will be used to give each member an isolated development workspace where milestone accomplishments can be merged into the master branch. Feature branches will be merged back to an overall development branch frequently and the development branch will be merged into master every two to three weeks.
 
 ## Bug/Feature Tracking
 
