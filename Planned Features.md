@@ -121,3 +121,30 @@
   - What?
 - CLI
   - Yes.
+
+
+
+# Prototype
+
+## MVP
+
+- Graph editor
+    + Ability to draw nodes and edges.
+    + Edges connect between nearest point on nodes.
+    + Should be able to delete nodes and edges.
+- Properties
+    + Able to edit properties of nodes and edges by selecting them.
+    + Set start/end for nodes.
+    + Set expected input for node.
+- Interpreter
+    + Interpret a DFA
+    + Ask user for input and pop up true or false if accepted.
+    + Able to handle binary strings of 1s and 0s.
+
+## Optional Features
+
+- Ability to move nodes after placement.
+- Saving and loading graph from file.
+- Detect when a new node is given as the start node and remove previous node's start property.
+- Ability to handle non-binary strings.
+- Structure IO as REPL.
