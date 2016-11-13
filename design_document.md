@@ -125,24 +125,30 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 # Software Engineering Tools and Techniques
 
 ## Development Process
-Agile will be used for the development process. Milestone goals will be assigned for every two to three weeks.
+
+Agile will be used for the development process. What this means is that we will break development into a series of sprints lasting one to three weeks in length. Before each sprint, a number of improvements will be decided upon for the sprint as well as measures of success to determine if goals were met. In order for a measure of success to be satisfied, it must be approved by a majority of the team. While this is the official process, the measures of success and goals for a particular sprint may be amended by the team in the case that some major bug is discovered, a feature planned for the sprint is intractable due to unforeseen issues, etc.
 
 ## Versioning
-Github will be used for the versioning system. Feature branches in Github will be used to give each member an isolated development workspace where milestone accomplishments can be merged into the master branch.
 
-## Bug Tracking
-Github issue tracking will be used to track bugs and enhancements. Issues will be assigned to specific team members. There will be no point system in place for accompishing tasks.
+[GitHub](https://github.com/) will be used for the versioning system. Feature branches in GitHub will be used to give each member an isolated development workspace where milestone accomplishments can be merged into the master branch. Feature branches will be merged back to master every one to two weeks. Therefore, work done by individual team members will be mostly isolated except for a few merges per week.
+
+## Bug/Feature Tracking
+
+GitHub issue tracking will be used to track bugs and enhancements. Issues will be assigned to specific team members. There will be no point system in place for accomplishing tasks. However, in order to minimize overly broad and vague issues, large issues will be decomposed into sub-issues which reference the main issue. Therefore, while some issues may remain open for a long time, most issues will see progress on the issue tracker by having sub-issues resolved.
 
 ## Testing
-Test Driven Development will be used for implementing the plugin API. Each major component of the project will be tested individually. The CLI will have unit tests for basic functionality. A test harness will be in place primarily as a sanity check for GUI behavior.
+
+Test Driven Development will be used for implementing the plugin API. Therefore, tests for the plugin API will be written before this API is written in code in order to ensure extensive coverage of the plugin API. Each major component of the project will be tested individually; additionally, integration tests exercising the behavior of multiple components will be written as the project matures. The CLI will have unit tests for basic functionality. A test harness such as [Selenium](http://docs.seleniumhq.org/) will be in place primarily as a smoke test for GUI behavior, but we will not test using this test harness when other testing methods are available to exercise the desired behaviors due to the fragility of such testing harnesses.
 
 ## Documentation
-Github.io will be used to house all documentation for the project. The documentation will be split into high level user documentation and plugin development documentation. JSDoc will be used for plugin and public API documentation. Project code will include inline documentation.
+
+GitHub.io will be used to house all documentation for the project. The documentation will be split into high level user documentation and plugin development documentation. JSDoc will be used for plugin and public API documentation. Project code will include inline documentation.
 
 ## Team Communication
 Communication will take place primarily over Slack to discuss development progress as well as any issues that come up. Email and phone communication will be used for high priority messages in the case of emergencies.
 
 ## Team Meetings
+
 There will be no formal Scrum meetings. Regularly scheduled weekly meetings will be held during designated class time when class is not in session and during Sunday afternoons. Regularly scheduled meetings will last between 1-1.5 hours. Other meetings will be scheduled as needed.
 
 # Timeline (1-2 pages)
