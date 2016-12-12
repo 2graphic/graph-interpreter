@@ -21,7 +21,7 @@ pictures/architecture.pdf: pictures/architecture.dot
 	dot pictures/architecture.dot -Tpdf -o pictures/architecture.pdf
 
 design_document.pdf: design_document.md pictures/architecture.pdf pictures/example_graph.pdf
-	pandoc design_document.md -o design_document.pdf --toc  -V geometry:margin=1in --latex-engine xelatex
+	pandoc design_document.md -o design_document.pdf --toc  -V geometry:margin=1in --latex-engine xelatex --number-sections --toc-depth=2
 
 clean:
 	rm -f *.pdf *.html

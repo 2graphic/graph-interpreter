@@ -245,6 +245,10 @@ A user of Sinap creates and edits a graph.
 3. User drags and drops components to create a computation graph.
 4. Editor populates with the components as determined by the user.
 
+### UI Sketches
+
+- Tools Panel
+
 ## Adjusting Properties of Graph Elements
 
 Graphs may have special properties associated with each node as specified by plugins. Users will be able to set and adjust these properties. See the Properties Panel sketch.
@@ -259,6 +263,10 @@ Graphs may have special properties associated with each node as specified by plu
 6. Sinap validates type of input.
 7. Plugin validates input for correctness and consistency.
 8. Property is updated in graph for particular component.
+
+### UI Sketches
+
+- Properties Panel
 
 ## Running an Interpreter
 
@@ -277,6 +285,10 @@ A Sinap programmer will run an interpreter upon a computation graph that will ac
 8. Program executes given the context of the input and graph.
 9. The result of the computation is displayed to the user.
 
+### UI Sketches
+
+- Input Panel
+
 ## Feeding Images to a Graph
 
 While editing certain kinds of graphs, a user will feed images to the graph. For this use case, a user already has a graph open and is in editing mode.
@@ -290,6 +302,10 @@ While editing certain kinds of graphs, a user will feed images to the graph. For
     * If so, the user will input either an image or a list of images depending on the plugin.
 5. User presses the run button
 6. Output is displayed to the user.
+
+### UI Sketches
+
+- Machine Learning Plugin
 
 ## Debugging a Program
 
@@ -305,6 +321,10 @@ A Sinap programmer will select some number of nodes (which represent program sta
 6. The program emits its state to the Sinap editor.
 7. The entirety of the emitted state (such as a the stack for a pushdown automata) is displayed by the editor. See the Debug Panel sketch.
 
+### UI Sketches
+
+- Debug Panel
+
 ## Writing Graphs on a Projector
 
 Professors will display a graph on a large display such as a project and will edit this graph in front of an audience. All critical elements of the graph should be visible to the audience. See the Full Screen sketch.
@@ -315,6 +335,10 @@ Professors will display a graph on a large display such as a project and will ed
 2. Professor selects to enter presentation mode.
 3. Sinap reconfigures itself, hiding most non-critical menus and bars to maximize screen real estate.
 4. Professor lectures while editing graph.
+
+### UI Sketches
+
+- Full Screen Sketch
 
 ## Export Graphs to Images
 
@@ -328,6 +352,10 @@ A user will create a graph and export it to an image format suitable for reports
 4. User selects location to save the image.
 5. Sinap saves the image according to the options selected in the specified file location.
 
+### UI Sketches
+
+- Menu
+
 ## Customized Component Look and Feel
 
 Plugin designers will write code to specify the look and feel of both nodes and edges through a simple declarative API.
@@ -338,6 +366,10 @@ Plugin designers will write code to specify the look and feel of both nodes and 
 2. Designer creates custom images for nodes.
 3. Designer creates a file mapping these images to node types.
 4. Sinap reads the file mapping and loads the custom component pictures for the plugin.
+
+### UI Sketch
+
+None
 
 ## Beautify Graph
 
@@ -351,6 +383,10 @@ Users of Sinap will select to beautify a graph. Sinap will then make a best effo
 3. Based on these rules, Sinap will try to find a layout of the graph that matches these rules with as minimal modifications to the existing graph as possible.
 4. Sinap updates the graph layout visually as well as in the graph model.
     + The beautification will **not** be saved until the user specifies to do so.
+
+### UI Sketch
+
+- Menu
 
 ## Composing Graphs
 
@@ -366,6 +402,12 @@ A user of Sinap will be able to design small sub graphs with defined inputs and 
 5. User connects input edges and output edges going to and from the subgraph.
 6. User can now run interpreters on the graph just as they could for any other graph.
 
+### UI Sketch
+
+- Blank Canvas
+- Files Panel
+- Tools Panel
+
 ## Bootstrapping Sinap
 
 A new user (likely a student) of Sinap will download, install, and configure Sinap.
@@ -380,6 +422,10 @@ A new user (likely a student) of Sinap will download, install, and configure Sin
 5. User will configure Sinap to have their desired plugins.
 6. Sinap downloads and installs these plugins.
 
+### UI Sketch
+
+- New Dialog
+
 ## Installing a Plugin
 
 A user of Sinap will select and install a Sinap plugin from a git repository.
@@ -392,6 +438,10 @@ A user of Sinap will select and install a Sinap plugin from a git repository.
 4. Sinap clones git repository if remote.
 5. Sinap runs installation procedures for the plugin and then deletes the cloned repository (if the repository was not originally local).
 
+### UI Sketch
+
+- New Dialog
+
 ## Machine Learning
 
 A student or professional of machine learning will create and run a neural network using Sinap. See the Machine Learning Plugin sketch.
@@ -402,6 +452,10 @@ A student or professional of machine learning will create and run a neural netwo
 2. User adds in nodes/edges as well as setting various properties of these elements to create a machine learning algorithm. See the Properties Panel sketch.
 3. User inputs the data that will train the neural network as well as any test data.
 4. User runs neural network and produces various statistics on the algorithm (i.e. accuracy) as well as outputting the result for each input to the network.
+
+### UI Sketch
+
+- Machine Learning Plugin
 
 ## Creating and Running Automata
 
@@ -415,6 +469,11 @@ A student of models of computation will create and run a graph representing some
 4. Sinap interpreter runs the graph with the given input.
 5. Sinap displays the output of the computation (generally true or false for if the input is in the formal language specified by the automata).
 
+### UI Sketch
+
+- Files Panel
+- Input Panel
+
 ## Student Testing Graphs
 
 A student will write and execute tests against a graph they designed to evaluate if it performs as expected. See the Test Panel sketch.
@@ -425,6 +484,10 @@ A student will write and execute tests against a graph they designed to evaluate
 2. Student runs these tests in Sinap against some particular graph.
 3. Sinap will run each of these tests and verify that the actual output matches the expected output.
 4. The results of the tests will be displayed to the user.
+
+### UI Sketch
+
+- Test Panel
 
 ## TA Runs Tests
 
@@ -439,3 +502,8 @@ A TA of models of computation will load a student's graph into Sinap and run a p
 5. TA executes tests against the graph and views output.
 6. TA loads another student's graph and goes back to step 3 continuing until all students' graphs are graded.
     * Note that the tests will only need to be selected and loaded once.
+
+### UI Sketch
+
+- Test Panel
+- Blank Canvas
