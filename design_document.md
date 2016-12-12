@@ -56,14 +56,17 @@ Because Sinap will be developed using Electron, it will be bundled as an install
 # Requirements Analysis
 
 ## System Architecture
+
 ![Sinap architecture](pictures/architecture.pdf){ width=70% }
 
 Sinap will be broken into 3 main components: the active plug-in, the main GUI, and the plug-in interface.
 
 ### Main GUI
+
 Sinap will present a GUI to the user as its primary interface. This GUI will be implemented with Angular 2 and Electron. The graph-editor will be a self contained editor inside an HTML canvas tag. It will be built into a component^[We went to a presentation by the company that created Lucid Chart. This is the approach they used to build their chart editor into their application.] to communicate with the rest of the Angular system. We will also build components that handle inputs of various arbitrary types (such as custom `image` or `list` input components). These components will be used to feed the plugins input and display the output.
 
 ### Plug-in Interface
+
 Plug-ins for Sinap will communicate via a single API (the Plug-in Interface). This API will create an abstraction layer which will translate:
 
 1. Descriptions of what constitutes a valid graph to the editor GUI^[The editor GUI is a separate concern from the interpreter and will be a part of its own component.]
@@ -76,16 +79,20 @@ Plug-ins for Sinap will communicate via a single API (the Plug-in Interface). Th
 5. Interpreter state to the debugger view and output to the test/input views
 
 ### Command Line Interface
+
 In addition to the main GUI, a CLI will be provided for the plug-in interface so that interpreters can be invoked from the command line. This will simplify testing of the plug-in interface and allow Sinap programs to be decoupled from the Sinap IDE.
 
 ## Personnel
+
 * __Sheyne Anderson__ will be responsible for developing the Plugin API. His qualifications include over ten years of development across a wide variety of areas and fields giving him a broad perspective of utilizing and creating APIs.
 * __CJ Dimaano__ will be responsible for developing the visual graph-editor component. His experience includes working with the HTML 5 canvas element from taking CS 4600 - Computer Graphics.
 * __Dyllon Gagnier__ will be responsible for developing the CLI. His experience includes designing a command line testing framework for MIPS that was utilized in CS 3810, Computer Organization, at the University of Utah.
 * __Daniel James__ will be responsible for the main GUI. His experience includes having worked on and being in charge of Angular apps in his past two internships.
 
 ## System Features
+
 ### Base Features
+
 * __IDE:__
     * _Graph Editor:_ A canvas component that will allow a user to create and edit graphs.
     * _Zooming:_ Whole IDE will be zoomable (text, etc...)
@@ -98,8 +105,8 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
     * _Support for:_ Finite Automaton, Mealy Machine, Moore Machine, Pushdown Automaton, Turing Machine, Multi-Tape Turing Machine, Grammars
 * Run on all three platforms (macOS, Windows, Linux)
 
-
 ### Planned Features
+
 * __IDE__
     * Auto Format graphs nicely.
     * _Input Types:_ Plugins provide type annotations for the kind of input they expect (images, text, etc...)
@@ -110,9 +117,8 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 * __Machine Learning Plugin:__ A plugin that allows users to prototype ML algorithms.
 * __Scriptable Interface:__ Allow a batch of graphs to be run with sets of input easily.
 
-
-
 ### Advanced Features
+
 * __IDE:__
     * Allow users to use stylus/drawing to create graphs and recognize shapes.
     * _Reverse Debugger:_ Allow user to step backwards through interpretation of graph once a break state is hit.
@@ -120,6 +126,11 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
     * Reading and writing JFLAP files.
     * Export code to simulate graph and interpretation.
 * Other minor plugins to show off power of Sinap.
+    * Knowledge graph/Mind map with [Neo4j](https://neo4j.com/) like query engine.
+    * Circuit design
+    * Education programming language for children and other beginners
+    * Web framework
+    * Demonstration of graph algorithms like BFS, Dijkstra's algorithm, topological sort, etc.
 * Plugins that change behavior of Sinap. (ie plugin for submitting homework files.)
 
 # Software Engineering Tools and Techniques
