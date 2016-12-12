@@ -128,28 +128,43 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 
 Agile will be used for the development process. What this means is that we will break development into a series of sprints lasting one to three weeks in length. Before each sprint, a number of improvements will be decided upon for the sprint as well as measures of success to determine if goals were met. In order for a measure of success to be satisfied, it must be approved by a majority of the team. While this is the official process, the measures of success and goals for a particular sprint may be amended by the team in the case that some major bug is discovered, a feature planned for the sprint is intractable due to unforeseen issues, etc.
 
+Measures of success should be specific measureable (either qualitatively or quantitatively) items to evaluate progress on a given task.
+
+Meetings will be held biweekly (twice per week) in order to evaluate progress each team member has made towards their current goals as well as to discuss high level design principles and overall architecture of the project. Given the slower pace of this project as compared to a typical 40 hour work week environment, this will allow for frequent communication without bogging down the team in procedural matters.
+
 ## Versioning
 
 [GitHub](https://github.com/) will be used for the versioning system. Feature branches in GitHub will be used to give each member an isolated development workspace where milestone accomplishments can be merged into the master branch. Feature branches will be merged back to an overall development branch frequently and the development branch will be merged into master every two to three weeks.
+
+By utilizing feature branches, the master branch will be kept in a relatively stable state suitable for use by test users as well as for demonstration purposes. Feature branches can then be used freely by team members as a way to remotely back up their work regardless of its readiness for production or testing. However, frequent merges must be performed by team members to avoid conflicts. Finally, strict adherence to this policy may be relaxed during the prototype phase due to the fact that most changes have cross cutting concerns.
 
 ## Bug/Feature Tracking
 
 GitHub issue tracking will be used to track bugs and enhancements. Issues will be assigned to specific team members. There will be no point system in place for accomplishing tasks. However, in order to minimize overly broad and vague issues, large issues will be decomposed into sub-issues which reference the main issue. Therefore, while some issues may remain open for a long time, most issues will see progress on the issue tracker by having sub-issues resolved.
 
+GitHub provides an easy to use interface that is simple and quick to utilize thereby helping to ensure that it will be used. Additionally, GitHub issues are also tracked even when closed thereby providing a good log for design decisions as well as any debugging that took place when fixing some issue. While documentation is critically important, it is much easier to fall behind on documentation than it is to fall behind on issue tracking.
+
 ## Testing
 
 Test Driven Development will be used for implementing the plugin API. Therefore, tests for the plugin API will be written before this API is written in code in order to ensure extensive coverage of the plugin API. Each major component of the project will be tested individually; additionally, integration tests exercising the behavior of multiple components will be written as the project matures. The CLI will have unit tests for basic functionality. A test harness such as [Selenium](http://docs.seleniumhq.org/) will be in place primarily as a smoke test for GUI behavior, but we will not test using this test harness when other testing methods are available to exercise the desired behaviors due to the fragility of such testing harnesses.
+
+While testing is of course critically important for complicated code, tests will not always be written for "obvious" code. In these cases, the tests themselves are oftentimes more complex than the code that is being tested thereby increasing the cost to change/add features while bringing little benefit the project. Testing will be done, but it will be done on a priority based system in order to maximize the benefits of testing while minimizing the costs. For these particular tests, automation and unit testing technologies are critical in speeding up development and forming a set of tools for quickly addressing issues as they arise.
 
 ## Documentation
 
 GitHub.io will be used to house all documentation for the project. The documentation will be split into high level user documentation and plugin development documentation. JSDoc will be used for plugin and public API documentation. Project code will include inline documentation.
 
+Documentation, like testing, can be incredibly helpful and important. However, it is very easy for documentation to become outdated as code changes yet documentation does not. Therefore, every effort will be made to maximize the value that documentation brings by emphasizing high level documentation and code samples over meticulous documentation of every helper function.
+
+Furthermore, while documentation for developers can be a force multiplier for future work, emphasis will be placed upon documenting first how to utilize the GUI, then how to write plugins, and finally all other documentation. This is because the latter have the benefit of likely being competent programmers who may be expected to read at least some of the source documentation.
+
 ## Team Communication
-Communication will take place primarily over Slack to discuss development progress as well as any issues that come up. Email and phone communication will be used for high priority messages in the case of emergencies.
+
+Communication will take place primarily over Slack to discuss development progress as well as any issues that come up. Email and phone communication will be used for high priority messages in the case of emergencies. Slack provides an easy and fast interface for communication including the ability to quickly send small files back and force, set up meeting reminders, etc. Furthermore, emails have the tendency of having a low signal to noise ratio due to the lack of explicit subject filtering mechanisms (due to email being used for so many other purposes outside of this project).
 
 ## Team Meetings
 
-There will be no formal Scrum meetings. Regularly scheduled weekly meetings will be held during designated class time when class is not in session and during Sunday afternoons. Regularly scheduled meetings will last between 1-1.5 hours. Other meetings will be scheduled as needed.
+There will be no formal Scrum meetings. Regularly scheduled weekly meetings will be held during designated class time when class is not in session and during Sunday afternoons. Regularly scheduled meetings will last between 1-1.5 hours. Other meetings will be scheduled as needed. As mentioned in the development process section, these meetings should be at least biweekly to facilitate speedy communication.
 
 # Timeline (1-2 pages)
 
