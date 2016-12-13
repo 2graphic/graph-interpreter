@@ -179,41 +179,42 @@ There will be no formal Scrum meetings. Regularly scheduled weekly meetings will
 
 # Timeline (1-2 pages)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-Week        Sheyne Anderson                     CJ Dimaano                 Dyllon Gagnier              Daniel James                Major Accomplishments
-----------  ----------------------------------  -------------------------  --------------------------  --------------------------  -----------------------
-2017-01-09  Unit Tests Panel                    Graph Composition          Unit Tests Panel            Graph Composition
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Week        Sheyne Anderson                      CJ Dimaano                 Dyllon Gagnier              Daniel James                Major Accomplishments
+----------  -----------------------------------  -------------------------  --------------------------  --------------------------  -----------------------
 
-2017-01-16  Unit Tests Panel                    Graph Composition          Unit Tests Panel            Graph Composition
+2017-01-09  Neural Net Plugin                    Graph Composition          Unit Tests Panel            Graph Composition
 
-2017-01-23  Neural Net Plugin                   Flexible Edges             Neural Net Plugin           Flexible Edges
+2017-01-16  Neural Net Plugin                    Graph Composition          Unit Tests Panel            Graph Composition
 
-2017-01-30  Neural Net Plugin                   Flexible Edges             Neural Net Plugin           Flexible Edges
+2017-01-23  Plugin-interface specification       Flexible Edges             Neural Net Plugin           Flexible Edges
 
-2017-02-06  Debugging                           Undo/Redo                  Debugging                   Undo/Redo
+2017-01-30  Plugin-interface specification       Flexible Edges             Neural Net Plugin           Flexible Edges
 
-2017-02-13  Debugging                           Undo/Redo                  Debugging                   Undo/Redo                   Alpha Complete
+2017-02-06  Debugging                            Undo/Redo                  Debugging                   Undo/Redo
 
-2017-02-20  Graph beutification                 Full screen mode           Moveable component windows  Moveable component windows
+2017-02-13  Debugging                            Undo/Redo                  Debugging                   Undo/Redo                   Alpha Complete
 
-2017-02-27  Graph beutification                 Full screen mode           Moveable component windows  Moveable component windows
+2017-02-20  Graph beautification                 Full screen mode           Moveable component windows  Moveable component windows
 
-2017-03-06  Graph beutification                 Full screen mode           Custom node images          Custom node images
+2017-02-27  Graph beautification                 Full screen mode           Moveable component windows  Moveable component windows
 
-2017-03-13  Graph beutification specialization  Pushdown automata support  Custom node images          Custom node images
+2017-03-06  Graph beautification                 Full screen mode           Custom node images          Custom node images
 
-2017-03-20  Reverse debugging                   Stylus graph creation      Stylus graph creation       Reverse debugging           Beta Complete
+2017-03-13  Graph beautification specialization  Pushdown automata support  Custom node images          Custom node images
 
-2017-03-27  Reverse debugging                   Stylus graph creation      Stylus graph creation       Reverse debugging
+2017-03-20  Reverse debugging                    Stylus graph creation      Stylus graph creation       Reverse debugging           Beta Complete
 
-2017-04-03  Reverse debugging                   Stylus graph creation      Stylus graph creation       Reverse debugging
+2017-03-27  Reverse debugging                    Stylus graph creation      Stylus graph creation       Reverse debugging
 
-2017-04-10  TA automation library               Knowledge graph plugin     TA automation library       Circuit design plugin
+2017-04-03  Reverse debugging                    Stylus graph creation      Stylus graph creation       Reverse debugging
 
-2017-04-17  TA automation library               Knowledge graph plugin     TA automation library       Circuit design plugin
+2017-04-10  TA automation library                Knowledge graph plugin     TA automation library       Circuit design plugin
 
-2017-04-24  TA automation library               Knowledge graph plugin     TA automation library       Circuit design plugin       1.0 Release
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+2017-04-17  TA automation library                Knowledge graph plugin     TA automation library       Circuit design plugin
+
+2017-04-24  TA automation library                Knowledge graph plugin     TA automation library       Circuit design plugin       1.0 Release
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Table: Timeline for Sinap development.
 
