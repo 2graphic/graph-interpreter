@@ -182,7 +182,6 @@ There will be no formal Scrum meetings. Regularly scheduled weekly meetings will
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Week        Sheyne Anderson                      CJ Dimaano                 Dyllon Gagnier              Daniel James                Major Accomplishments
 ----------  -----------------------------------  -------------------------  --------------------------  --------------------------  -----------------------
-
 2017-01-09  Neural Net Plugin                    Graph Composition          Unit Tests Panel            Graph Composition
 
 2017-01-16  Neural Net Plugin                    Graph Composition          Unit Tests Panel            Graph Composition
@@ -214,11 +213,13 @@ Week        Sheyne Anderson                      CJ Dimaano                 Dyll
 2017-04-17  TA automation library                Knowledge graph plugin     TA automation library       Circuit design plugin
 
 2017-04-24  TA automation library                Knowledge graph plugin     TA automation library       Circuit design plugin       1.0 Release
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Table: Timeline for Sinap development.
 
 # Appendix A: UI Sketches
+
 ## Blank Canvas
 ![All files are closed.](ui_sketches/blank_canvas.png){ width=100% } \
 
