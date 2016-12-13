@@ -86,7 +86,7 @@ In addition to the main GUI, a CLI will be provided for the plug-in interface so
 
 * __Sheyne Anderson__ will be responsible for developing the Plugin API. His qualifications include over ten years of development across a wide variety of areas and fields giving him a broad perspective of utilizing and creating APIs.
 * __CJ Dimaano__ will be responsible for developing the visual graph-editor component. His experience includes working with the HTML 5 canvas element from taking CS 4600 - Computer Graphics.
-* __Dyllon Gagnier__ will be responsible for developing the CLI. His experience includes designing a command line testing framework for MIPS that was utilized in CS 3810, Computer Organization, at the University of Utah.
+* __Dyllon Gagnier__ will be responsible for developing the CLI as well as plugin management (downloading new plugins, updating existing, dependencies, etc.) and security. His experience includes designing a command line testing framework for MIPS that was utilized in CS 3810, Computer Organization, at the University of Utah. He has also studied various aspects of computer networks at a graduate level.
 * __Daniel James__ will be responsible for the main GUI. His experience includes having worked on and being in charge of Angular apps in his past two internships.
 
 ## System Features
@@ -177,7 +177,7 @@ Communication will take place primarily over Slack to discuss development progre
 
 There will be no formal Scrum meetings. Regularly scheduled weekly meetings will be held during designated class time when class is not in session and during Sunday afternoons. Regularly scheduled meetings will last between 1-1.5 hours. Other meetings will be scheduled as needed. As mentioned in the development process section, these meetings should be at least biweekly to facilitate speedy communication.
 
-# Timeline (1-2 pages)
+# Timeline
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Week        Sheyne Anderson                      CJ Dimaano                 Dyllon Gagnier              Daniel James                Major Accomplishments
