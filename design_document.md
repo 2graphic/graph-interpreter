@@ -183,6 +183,37 @@ There will be no formal Scrum meetings. Regularly scheduled weekly meetings will
 
 > Most of you will feel as though you are guessing -- and that's ok! You will not be held to this exact schedule. But it is extremely useful to do your best to create a realistic schedule now to get experience in planning long-term projects. Equally important, creating this schedule will force you to think about (1) the order in which things need to be done, (2) how long you expect various phases to take, and (3) what you should expect to have accomplished at various points in the semester. This will serve as a guide to help you evaluate your progress during the semester and quickly recognize if things are going much slower or faster than you anticipated.
 
+Talking Items:
+More Strict Typescript compiler options.
+Team logo and team shirts.
+Use labels, as addition to bug/enhancement, for components. For instance, label an issue “Bug” + “Graph Editor.” Get rid of over-arching issues for components.
+Go back to using feature branches, keep master stable, Daniel is pull-czar.
+
+
+
+Timeline:
+Alpha: 12/14 - 02/12 (5 weeks. [Christmas break is bonus, no work expected.])
+    Plugin support (dynamically loading plugin code.)
+    FLAP and ML plugin basic features.
+    Preliminary debugging panel/unit tests panel/files panel/components panel
+
+Beta: 02/13 - 03/19 (5 weeks, ends after Spring Break.)
+    FLAP feature parity with JFLAP.
+    Good debugging support.
+
+1.0 Feature Freeze - Sunday April 23rd.
+1.0 Due -  April 26th
+
+Alpha    Rank 1 features.
+Beta        Rank 2 features.
+1.0        Polish of Beta, additional features.
+
+
+Christmas Break
+No work expected.
+Daniel - Refactor project structure, folder organization.
+CJ - Visual changes with graph editor.
+
 # Appendix A: UI Sketches
 ## Blank Canvas
 ![All files are closed.](ui_sketches/blank_canvas.png){ width=100% } \
