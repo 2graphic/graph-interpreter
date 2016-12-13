@@ -179,40 +179,43 @@ There will be no formal Scrum meetings. Regularly scheduled weekly meetings will
 
 # Timeline (1-2 pages)
 
-> Create a schedule that lists the individual goals for each team member for each week of the semester. Create a matrix with one column per team member, and one row for each week in the semester. Inside each cell should be a specific description of what that person is expected to accomplish during that week. It may be helpful to list major benchmarks as well, where that makes sense (e.g., indicate when you expect the database to be fully functional).
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Week        Sheyne Anderson                     CJ Dimaano                 Dyllon Gagnier              Daniel James                Major Accomplishments
+----------  ----------------------------------  -------------------------  --------------------------  --------------------------  -----------------------
+2017-01-09  Unit Tests Panel                    Graph Composition          Unit Tests Panel            Graph Composition
 
-> Most of you will feel as though you are guessing -- and that's ok! You will not be held to this exact schedule. But it is extremely useful to do your best to create a realistic schedule now to get experience in planning long-term projects. Equally important, creating this schedule will force you to think about (1) the order in which things need to be done, (2) how long you expect various phases to take, and (3) what you should expect to have accomplished at various points in the semester. This will serve as a guide to help you evaluate your progress during the semester and quickly recognize if things are going much slower or faster than you anticipated.
+2017-01-16  Unit Tests Panel                    Graph Composition          Unit Tests Panel            Graph Composition
 
-Talking Items:
-More Strict Typescript compiler options.
-Team logo and team shirts.
-Use labels, as addition to bug/enhancement, for components. For instance, label an issue “Bug” + “Graph Editor.” Get rid of over-arching issues for components.
-Go back to using feature branches, keep master stable, Daniel is pull-czar.
+2017-01-23  Neural Net Plugin                   Flexible Edges             Neural Net Plugin           Flexible Edges
 
+2017-01-30  Neural Net Plugin                   Flexible Edges             Neural Net Plugin           Flexible Edges
 
+2017-02-06  Debugging                           Undo/Redo                  Debugging                   Undo/Redo
 
-Timeline:
-Alpha: 12/14 - 02/12 (5 weeks. [Christmas break is bonus, no work expected.])
-    Plugin support (dynamically loading plugin code.)
-    FLAP and ML plugin basic features.
-    Preliminary debugging panel/unit tests panel/files panel/components panel
+2017-02-13  Debugging                           Undo/Redo                  Debugging                   Undo/Redo                   Alpha Complete
 
-Beta: 02/13 - 03/19 (5 weeks, ends after Spring Break.)
-    FLAP feature parity with JFLAP.
-    Good debugging support.
+2017-02-20  Graph beutification                 Full screen mode           Moveable component windows  Moveable component windows
 
-1.0 Feature Freeze - Sunday April 23rd.
-1.0 Due -  April 26th
+2017-02-27  Graph beutification                 Full screen mode           Moveable component windows  Moveable component windows
 
-Alpha    Rank 1 features.
-Beta        Rank 2 features.
-1.0        Polish of Beta, additional features.
+2017-03-06  Graph beutification                 Full screen mode           Custom node images          Custom node images
 
+2017-03-13  Graph beutification specialization  Pushdown automata support  Custom node images          Custom node images
 
-Christmas Break
-No work expected.
-Daniel - Refactor project structure, folder organization.
-CJ - Visual changes with graph editor.
+2017-03-20  Reverse debugging                   Stylus graph creation      Stylus graph creation       Reverse debugging           Beta Complete
+
+2017-03-27  Reverse debugging                   Stylus graph creation      Stylus graph creation       Reverse debugging
+
+2017-04-03  Reverse debugging                   Stylus graph creation      Stylus graph creation       Reverse debugging
+
+2017-04-10  TA automation library               Knowledge graph plugin     TA automation library       Circuit design plugin
+
+2017-04-17  TA automation library               Knowledge graph plugin     TA automation library       Circuit design plugin
+
+2017-04-24  TA automation library               Knowledge graph plugin     TA automation library       Circuit design plugin       1.0 Release
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Table: Timeline for Sinap development.
 
 # Appendix A: UI Sketches
 ## Blank Canvas
